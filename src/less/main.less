@@ -18,7 +18,10 @@
  * definitions in our imported stylesheets.
  */
 
+@import 'colors.less';
 @import 'variables.less';
+@import 'base.less';
+@import 'heroshot.less';
 
 
 /**
@@ -64,19 +67,6 @@ h2 {
 
 
 /**
- * Navigation
- */
-
-.navbar {
-  margin-top: 20px;
-  
-  small {
-    font-size: 60%;
-  }
-}
-
-
-/**
  * Footer
  */
 
@@ -115,8 +105,6 @@ h2 {
 /**
  * Now that all app-wide styles have been applied, we can load the styles for
  * all the submodules and components we are using. 
- *
- * TODO: In a later version of this boilerplate, I'd like to automate this.
  */
 
 @import '../app/home/home.less';
