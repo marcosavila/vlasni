@@ -1,0 +1,21 @@
+.btn-group {
+    > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+        border-radius: 2px;
+    }
+}
+.btn-group {
+    > .btn:last-child:not(:first-child),
+    > .dropdown-toggle:not(:first-child) {
+        border-radius: 2px;
+    }
+}
+
+.btn-primary {
+    #vlasni-btn > .vlasni-btn-base;
+    #vlasni-btn > .standard;
+}
+
+.btn-transparent {
+    #vlasni-btn > .vlasni-btn-base;
+    #vlasni-btn > .transparent(@white, @white);
+}
