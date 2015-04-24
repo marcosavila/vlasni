@@ -1,3 +1,16 @@
+p,
+a,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+    font-family: @sansFontFamily;
+}
+
 /**
  * Header
  */
@@ -6,6 +19,15 @@
     margin: 0;
     border-color: @opaqueBlue;
     padding: 12px 0;
+
+    a {
+        text-transform: uppercase;
+    }
+}
+
+.navbar-brand {
+    height: 32px;
+    padding: 4px 15px;
 }
 
 .navbar-default {
@@ -16,6 +38,20 @@
 
                 &:hover {
                     background: transparent;
+                }
+            }
+        }
+
+        > li,
+        > .active {
+            > a {
+                color: @white;
+                font-style: 15px;
+                font-weight: @semibold;
+
+                &:hover {
+                    color: @white;
+                    text-decoration: underline;
                 }
             }
         }
