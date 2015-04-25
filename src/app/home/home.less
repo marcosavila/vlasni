@@ -29,12 +29,21 @@
     }
 
     .widget-list {
+        margin-bottom: 65px;
+
         > li {
             &:nth-child(2) {
                 margin-top: -10px;
                 padding-top: 40px;
                 padding-bottom: 40px;
             }
+        }
+    }
+
+    button {
+        &.btn-transparent {
+            #vlasni-btn > .vlasni-btn-base;
+            #vlasni-btn > .transparent(@boldBlue, @boldBlue);
         }
     }
 }
