@@ -1,17 +1,40 @@
-.marketing {
-  .row {
-    margin-bottom: 10px;
-  }
+.what-section {
+    padding: @sectionVerticalPadding 0;
 
-  .row:last-child {
-    margin-bottom: 0;
-  }
-  
-  h4 [class*=" icon-"], h4 [class^="icon-"] {
-    margin-right: 5px;
-    vertical-align: -10%;
-    font-size: 28px;
-    line-height: 1;
-  }
+    h2,
+    h3,
+    h4,
+    p {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: @fontXL;
+        color: @strongBlue;
+        font-weight: bold;
+    }
+
+    h3 {
+        color: @orange;
+        text-transform: uppercase;
+        font-size: @fontSM;
+        font-weight: @bold;
+    }
+
+    .lead {
+        font-size: @fontMD;
+        color: @grey;
+        font-weight: normal;
+        line-height: 1.8;
+    }
+
+    .widget-list {
+        > li {
+            &:nth-child(2) {
+                margin-top: -10px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+        }
+    }
 }
-
