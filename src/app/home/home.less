@@ -1,4 +1,7 @@
-.what-section {
+.what-section,
+.try-section,
+.behind-vlasni,
+.using-vlasni {
     padding: @sectionVerticalPadding 0;
 
     h2,
@@ -10,12 +13,10 @@
 
     h2 {
         font-size: @fontXL;
-        color: @strongBlue;
         font-weight: bold;
     }
 
     h3 {
-        color: @orange;
         text-transform: uppercase;
         font-size: @fontSM;
         font-weight: @bold;
@@ -23,11 +24,27 @@
 
     .lead {
         font-size: @fontMDS;
-        color: @grey;
         font-weight: normal;
         line-height: 1.8;
     }
+}
 
+.what-section,
+.behind-vlasni {
+    h2 {
+        color: @strongBlue;
+    }
+
+    h3 {
+        color: @orange;
+    }
+
+    .lead {
+        color: @grey;
+    }
+}
+
+.what-section {
     .widget-list {
         margin-top: 45px;
         margin-bottom: 65px;
@@ -110,5 +127,87 @@
 
     .middle-block-image {
         padding-left: 65px;
+    }
+}
+
+.try-section {
+    background: url("images/maps.jpg") no-repeat center center @blue;
+
+    h2,
+    h3,
+    .lead {
+        color: @white;
+    }
+
+    .lead {
+        font-size: @fontMD;
+    }
+}
+
+.vlasni-partners {
+    margin-top: 75px;
+
+    .legend {
+        font-weight: @bold;
+        font-size: @fontSM;
+        color: @boldBlue;
+        text-transform: uppercase;
+
+        i {
+            color: @orange;
+            margin: 0 10px;
+        }
+    }
+
+    .external-block {
+        height: 180px;
+        border: 1px solid @lightGrey;
+        border-radius: @baseRadius;
+
+        > div {
+            margin-top: -25px;
+            padding-top: 50%;
+            width: 100%;
+        }
+
+        &.external-left {
+            border-right: 0;
+        }
+
+        &.external-right {
+            border-left: 0;
+        }
+    }
+
+    .internal-block {
+        background: @lightestGrey;
+        height: 200px;
+        margin-top: -10px;
+        border: 1px solid @lightGrey;
+        border-radius: @baseRadius;
+        text-align: center;
+
+        img {
+            margin: -105px auto;
+            padding-top: 50%;
+            text-align: center;
+        }
+    }
+}
+
+.using-vlasni {
+    background: @lightestGrey;
+    border-top: 1px solid @lightGrey;
+
+    h3 {
+        color: @greySolid;
+        margin-bottom: 35px;
+    }
+
+    ul {
+        li {
+            text-align: center;
+            margin-bottom: 8px;
+        }
     }
 }
