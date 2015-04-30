@@ -29,7 +29,7 @@ angular.module( 'vlasni', [
 
   $scope.changeLanguage = function (langKey) {
     $translate.use(langKey);
-    $scope.activeLang = $translate.use();
+    $scope.activeLang = langKey;
   };
 
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
