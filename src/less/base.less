@@ -47,6 +47,19 @@ blockquote {
                 &:hover {
                     background: transparent;
                 }
+
+                &.lang-selector {
+                    font-size: @fontSM;
+                    color: @blue;
+                }
+            }
+        }
+
+        a {
+            &.lang-selector {
+                font-size: @fontSM;
+                color: @blue;
+                text-transform: capitalize;
             }
         }
 
@@ -54,12 +67,16 @@ blockquote {
         > .active {
             > a {
                 color: @white;
-                font-style: 15px;
+                font-size: 15px;
                 font-weight: @semibold;
 
                 &:hover {
                     color: @white;
                     text-decoration: underline;
+                }
+
+                &.lang-selector {
+                    color: @blue;
                 }
             }
         }
