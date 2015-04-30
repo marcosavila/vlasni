@@ -38,39 +38,26 @@
                 <div class="collapse navbar-collapse pull-right" collapse="menuCollapsed">
                     <ul class="nav navbar-nav">
                         <li ui-sref-active="active">
-                            <a href ui-sref="home">
-                                How it works
-                            </a>
+                            <a href ui-sref="home">{{ 'NAVIGATION_HOW_IT_WORKS' | translate }}</a>
                         </li>
                         <li ui-sref-active="active">
-                            <a href ui-sref="about">
-                                Quick view
-                            </a>
+                            <a href ui-sref="about">{{ 'NAVIGATION_QUICK_VIEW' | translate }}</a>
                         </li>
                         <li>
-                            <a href="#">
-                                About
-                            </a>
+                            <a href="#">{{ 'NAVIGATION_ABOUT' | translate }}</a>
                         </li>
                         <li>
-                            <a href="#">
-                                Pricing
-                            </a>
+                            <a href="#">{{ 'NAVIGATION_PRICING' | translate }}</a>
                         </li>
                         <li>
-                            <a href="#">
-                                Faq
-                            </a>
+                            <a href="#">{{ 'NAVIGATION_FAQ' | translate }}</a>
                         </li>
                         <li>
-                            <a href="#">
-                                Contact
-                            </a>
+                            <a href="#">{{ 'NAVIGATION_CONTACT' | translate }}</a>
                         </li>
                         <li>
-                            <a href="#">
-                                English
-                            </a>
+                            <a href="javascript:;" data-ng-click="changeLanguage('en')" ng-show="activeLang == 'es'">{{ 'LANGUAGE_SELECTOR_EN' | translate }}</a>
+                            <a href="javascript:;" data-ng-click="changeLanguage('es')" ng-show="activeLang == 'en'">{{ 'LANGUAGE_SELECTOR_ES' | translate }}</a>
                         </li>
                     </ul>
                 </div>
@@ -84,14 +71,15 @@
             <div class="footer-inner">
                 <span>
                     <img src="assets/images/logo-small.png" alt="Vlasni">
-                    &copy; 2015 <a href="#">Vlasni</a>. All rights reserved
+                    &copy; 2015 <a href="#">Vlasni</a>.
+                    {{ 'FOOTER_COPYRIGHT' | translate }}
                 </span>
                 <ul class="list-inline pull-right">
                     <li>
-                        <a href="#">Privacy policy</a>
+                        <a href="#">{{ 'FOOTER_NAV_PRIVACY' | translate }}</a>
                     </li>
                     <li>
-                        <a href="#">Terms and conditions</a>
+                        <a href="#">{{ 'FOOTER_NAV_TERMS' | translate }}</a>
                     </li>
                     <li>
                         <a href="#">
