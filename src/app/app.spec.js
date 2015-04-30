@@ -15,6 +15,10 @@ describe( 'AppCtrl', function() {
             expect( AppCtrl ).toBeTruthy();
         }));
 
+        it('should exists activeLang', inject(function () {
+            expect($scope.activeLang).toBeTruthy();
+        }));
+
         it('should exists changeLanguage', inject(function () {
             expect($scope.changeLanguage).toBeTruthy();
         }));

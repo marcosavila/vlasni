@@ -25,8 +25,11 @@ angular.module( 'vlasni', [
 })
 
 .controller( 'AppCtrl', function AppCtrl ( $scope, $location, $translate ) {
+  $scope.activeLang = $translate.preferredLanguage();
+
   $scope.changeLanguage = function (langKey) {
     $translate.use(langKey);
+    $scope.activeLang = $translate.use();
   };
 
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
