@@ -2,7 +2,7 @@ angular.module( 'vlasni', [
   'templates-app',
   'templates-common',
   'vlasni.home',
-  'vlasni.about',
+  'vlasni.how-works',
   'ui.router',
   'pascalprecht.translate'
 ])

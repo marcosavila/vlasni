@@ -1,23 +1,23 @@
-angular.module( 'vlasni.about', [
+angular.module( 'vlasni.how-works', [
   'ui.router',
   'placeholders',
   'ui.bootstrap'
 ])
 
 .config(function config( $stateProvider ) {
-  $stateProvider.state( 'about', {
-    url: '/about',
+  $stateProvider.state( 'how-works', {
+    url: '/how-it-works',
     views: {
       "main": {
-        controller: 'AboutCtrl',
-        templateUrl: 'about/about.tpl.html'
+        controller: 'HowWorksCtrl',
+        templateUrl: 'how-works/how-it-works.tpl.html'
       }
     },
-    data:{ pageTitle: 'What is It?' }
+    data:{ pageTitle: 'How it works' }
   });
 })
 
-.controller( 'AboutCtrl', function AboutCtrl( $scope ) {
+.controller( 'HowWorksCtrl', function AboutCtrl( $scope ) {
   // This is simple a demo for UI Boostrap.
   $scope.dropdownDemoItems = [
     "The first choice!",
