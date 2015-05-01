@@ -17,6 +17,10 @@
         line-height: 1;
     }
 
+    p {
+        margin-bottom: 0;
+    }
+
     .lead {
         color: @white;
         font-size: @fontLG;
@@ -24,13 +28,15 @@
         line-height: 1.25;
     }
 
-    .btn-group {
-        margin: 55px 0;
-    }
+    .jumbotron-btn-container {
+        margin: 35px 0;
 
-    .btn {
-        &:first-child {
-            margin-right: 30px;
+        &.btn-group {
+            .btn {
+                &:first-child {
+                    margin-right: 30px;
+                }
+            }
         }
     }
 }

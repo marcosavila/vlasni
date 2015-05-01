@@ -34,12 +34,15 @@
     "MIDDLE_BLOCKS_RIGHT_QUOTE_FROM_LOCATION": "Encargado de marketing - Skype",
     "TRY_SECTION_LABEL": "Prueba Vlasni",
     "TRY_SECTION_TITLE": "Comunicación directa, en cualquier momento y en cualquier lugar.",
-    "TRY_SECTION_TEXT": "Vlasni applies predictive algorithms for matching users interests and advertising offers.",
+    "TRY_SECTION_TEXT": "Vlasni aplica algoritmos predictivos para hacer coincidir los intereses de los usuarios y ofertas publicitarias",
     "TRY_SECTION_LINKTEXT": "Solicite una demostración",
     "BEHIND_SECTION_LABEL": "Detrás de Vlasni",
     "BEHIND_SECTION_TITLE": "Creado por Develance con apoyo de Peypedatos",
     "BEHIND_SECTION_CREATED": "Creado por",
     "BEHIND_SECTION_SUPPORTED": "Con el apoyo de",
     "BEHIND_LINKTEXT": "Conozca mas sobre Vlasni",
-    "USING_VLASNI_LABEL": "This companies are using Vlasni"
+    "USING_VLASNI_LABEL": "This companies are using Vlasni",
+    "HOW_IT_WORKS_MAIN_TITLE": "Como funciona",
+    "HOW_IT_WORKS_TEXT": "Vlasni aplica algoritmos predictivos para hacer coincidir los intereses de los usuarios y ofertas publicitarias",
+    "HOW_IT_WORKS_LINKTEXT_DEMO": "Solicite una demostración"
 }
