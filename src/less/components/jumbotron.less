@@ -5,9 +5,13 @@
     background: transparent;
     margin: 0;
     text-align: center;
-
     padding-top: 180px;
     padding-bottom: 180px;
+
+    &.short {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
 
     h1 {
         font-size: @fontXXL;
@@ -37,6 +41,32 @@
                     margin-right: 30px;
                 }
             }
+        }
+    }
+}
+
+/**
+ * Heroshot
+ */
+
+.hero-section {
+    background: @clearBlue;
+    padding-top: 75px;
+    position: relative;
+
+    &.hero-home {
+        background: url("images/vlasni-hero.jpg") no-repeat scroll 0 0 transparent;
+        background-size: 100% auto;
+    }
+
+    .hero-action {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+
+        i {
+            font-size: 21px;
+            color: @white;
         }
     }
 }
