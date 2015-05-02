@@ -95,3 +95,25 @@
         background-color: @lightGrey;
     }
 }
+
+// Vlasni triangle
+#triangle {
+    .base-generator() {
+        width: 0;
+        height: 0;
+        border-style: solid;
+    }
+
+    .to-bottom(@triangle-color) {
+        border-width: 12px 7.5px 0 7.5px;
+        border-color: @triangle-color transparent transparent transparent;
+    }
+
+    .bottom-out {
+        bottom: -12px;
+        content: "";
+        left: 50%;
+        margin-left: -7.5px;
+        position: absolute;
+    }
+}
