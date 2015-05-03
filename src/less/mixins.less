@@ -1,3 +1,74 @@
+// Vlasni sections and structures
+#vertical-sections {
+    .base-styles() {
+        padding: @sectionVerticalPadding 0;
+
+        h2,
+        h3,
+        h4,
+        p {
+            text-align: center;
+        }
+
+        h2 {
+            font-size: @fontXL;
+            font-weight: @bold;
+
+            &.normal-text {
+                font-weight: @normal;
+            }
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-size: @fontSM;
+            font-weight: @bold;
+        }
+
+        .lead {
+            font-size: @fontMDS;
+            font-weight: normal;
+            line-height: 1.8;
+        }
+    }
+
+    .clear-section() {
+        h2 {
+            color: @strongBlue;
+        }
+
+        h3 {
+            color: @orange;
+        }
+
+        .lead {
+            color: @grey;
+        }
+    }
+
+    .dark-bg() {
+        h2,
+        h3,
+        .lead {
+            color: @white;
+        }
+
+        .lead {
+            font-size: @fontMD;
+        }
+    }
+
+    .grey-bg() {
+        background: @lightestGrey;
+        border-top: 1px solid @lightGrey;
+
+        h3 {
+            color: @greySolid;
+            margin-bottom: 35px;
+        }
+    }
+}
+
 // Vlasni buttons mixins
 #vlasni-btn {
     .vlasni-btn-base() {

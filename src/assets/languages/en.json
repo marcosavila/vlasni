@@ -44,5 +44,15 @@
     "USING_VLASNI_LABEL": "This companies are using Vlasni",
     "HOW_IT_WORKS_MAIN_TITLE": "How it works",
     "HOW_IT_WORKS_TEXT": "Vlasni applies predictives algorithms for matching user interests and advertising offers",
-    "HOW_IT_WORKS_LINKTEXT_DEMO": "Request a demo"
+    "HOW_IT_WORKS_LINKTEXT_DEMO": "Request a demo",
+    "HOW_IT_WORKS_CAMPAIGNS_LABEL": "Campaigns",
+    "HOW_IT_WORKS_CAMPAIGNS_TITLE": "Vlasni is proactive, it does not require the individual to perform any activity in order to deliver advertising.",
+    "HOW_IT_WORKS_CAMPAIGNS_REGISTRATION_TITLE": "Registration",
+    "HOW_IT_WORKS_CAMPAIGNS_REGISTRATION_TEXT": "Users downloads the mobile application, self register in a single step, and that's it.",
+    "HOW_IT_WORKS_CAMPAIGNS_NOTIFICATION_TITLE": "Notifications",
+    "HOW_IT_WORKS_CAMPAIGNS_NOTIFICATION_TEXT": "It alerts the individuals when an offer is activated, based on the calendar, geo-positioning, and other factors",
+    "HOW_IT_WORKS_CAMPAIGNS_INTERACTION_TITLE": "Interaction",
+    "HOW_IT_WORKS_CAMPAIGNS_INTERACTION_TEXT": "Interactive contents offer a communication channel 1-on-1 between Advertiser and Individual.",
+    "HOW_IT_WORKS_QUOTE": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+
 }
