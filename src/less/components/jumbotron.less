@@ -60,23 +60,24 @@
     }
 
     &.hero-internal {
-        #gradient > .vertical(rgba(0,0,0,0.3); @clearBlue; @start-percent: 0%; @end-percent: 39%)
+        #gradient > .vertical(rgba(0,0,0,0.3); @clearBlue; @start-percent: 0%; @end-percent: 39%);
+
+        &::after {
+            #triangle > .base-generator;
+            #triangle > .to-bottom(@clearBlue);
+            #triangle > .bottom-out;
+        }
     }
 
     .hero-action {
         position: absolute;
         bottom: 40px;
         left: 50%;
+        margin-left: -10px;
 
         i {
             font-size: 21px;
             color: @white;
         }
-    }
-
-    &::after {
-        #triangle > .base-generator;
-        #triangle > .to-bottom(@clearBlue);
-        #triangle > .bottom-out;
     }
 }
