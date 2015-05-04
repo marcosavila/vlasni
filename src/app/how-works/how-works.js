@@ -18,12 +18,7 @@ angular.module( 'vlasni.how-works', [
 })
 
 .controller( 'HowWorksCtrl', function AboutCtrl( $scope ) {
-  // This is simple a demo for UI Boostrap.
-  $scope.dropdownDemoItems = [
-    "The first choice!",
-    "And another choice for you.",
-    "but wait! A third!"
-  ];
+
 })
 
 ;
