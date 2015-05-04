@@ -40,7 +40,7 @@
     "BEHIND_SECTION_TITLE": "Creado por Develance con apoyo de Peypedatos",
     "BEHIND_SECTION_CREATED": "Creado por",
     "BEHIND_SECTION_SUPPORTED": "Con el apoyo de",
-    "BEHIND_LINKTEXT": "Conozca mas sobre Vlasni",
+    "BEHIND_SECTION_LINKTEXT": "Conozca mas sobre Vlasni",
     "USING_VLASNI_LABEL": "This companies are using Vlasni",
     "HOW_IT_WORKS_MAIN_TITLE": "Como funciona",
     "HOW_IT_WORKS_TEXT": "Vlasni aplica algoritmos predictivos para hacer coincidir los intereses de los usuarios y ofertas publicitarias",
@@ -53,5 +53,11 @@
     "HOW_IT_WORKS_CAMPAIGNS_NOTIFICATION_TEXT": "Alerta a los individuos cuando se activa una oferta, basándose en el calendario, geo-posicionamiento, y otros factores",
     "HOW_IT_WORKS_CAMPAIGNS_INTERACTION_TITLE": "Interacción",
     "HOW_IT_WORKS_CAMPAIGNS_INTERACTION_TEXT": "Contenidos interactivos ofrecen un canal de comunicación 1-a-1 entre el anunciante y el individual.",
-    "HOW_IT_WORKS_QUOTE": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+    "HOW_IT_WORKS_QUOTE": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    "HOW_IT_WORKS_STEPS_TITLE_1": "Información del entorno",
+    "HOW_IT_WORKS_STEPS_TEXT_1": "La historia de la matriz de consumo y el interés combinado con las conductas y las ofertas del individuo generada por el anunciante.",
+    "HOW_IT_WORKS_STEPS_TITLE_2": "Procesamiento",
+    "HOW_IT_WORKS_STEPS_TEXT_2": "Algoritmos de inteligencia artificial autónomos predicen el partido más probable entre las ofertas y los intereses de los individuos disponibles.",
+    "HOW_IT_WORKS_STEPS_TITLE_3": "Resultados",
+    "HOW_IT_WORKS_STEPS_TEXT_3": "Los resultados se organizan para obtener campañas publicitarias individualizadas, evitando contenido que no tiene correspondencia con el destinatario."
 }

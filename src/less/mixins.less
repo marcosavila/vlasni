@@ -32,6 +32,10 @@
         }
     }
 
+    .no-padding() {
+        padding: 0;
+    }
+
     .clear-section() {
         h2 {
             color: @strongBlue;
@@ -139,6 +143,11 @@
         }
     }
 
+    .no-margin() {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
     .widget-list(@bg: @lightestGrey, @borderColor: @lightGrey) {
         > li {
             border: 1px solid @borderColor;
@@ -155,6 +164,85 @@
             }
         }
     }
+
+    .two-col-list() {
+        li {
+            position: relative;
+            overflow: hidden;
+
+            &:last-child {
+                .middle-list-colored {
+                    padding-bottom: 95px;
+                }
+
+                .middle-list-clear {
+                    padding-bottom: 122px;
+                }
+            }
+        }
+
+        .middle-list-colored,
+        .middle-list-clear {
+            width: 50%;
+            position: relative;
+            padding-top: 95px;
+            padding-bottom: 45px;
+            min-height: 325px;
+        }
+
+        .middle-list-colored {
+            background: @lightestGrey;
+            padding-right: 40px;
+
+            img {
+                margin-top: 75px;
+            }
+        }
+
+        .middle-list-clear {
+            position: absolute;
+            margin-left: 50%;
+            top: 0;
+            padding-left: 65px;
+            padding-right: 20%;
+            box-shadow: -1px 0 0 0 @lightGrey;
+
+            h2,
+            h3,
+            p {
+                text-align: left;
+            }
+
+            h2,
+            h3 {
+                font-size: @fontXL;
+                font-weight: @bold;
+                color: @strongBlue;
+            }
+
+            p {
+                font-size: @fontMDS;
+                color: @grey;
+            }
+        }
+
+        .middle-list-step {
+            background: @white;
+            font-weight: @bold;
+            font-size: @fontMDS;
+            color: @grey;
+            border-radius: 50%;
+            padding: 10px;
+            border: 1px solid @greySecondary;
+            left: 50%;
+            line-height: 1;
+            margin-left: -21px;
+            padding: 13px 16px 9px;
+            position: absolute;
+            text-align: center;
+            top: 78px;
+        }
+    }
 }
 
 // Vlasni dividers and separator elements
@@ -162,11 +250,20 @@
     .center-aligned() {
         margin: 40px auto;
     }
+
+    .left-aligned() {
+        margin: 40px 0;
+    }
+
     .short-rounded() {
         width: 50px;
         height: 6px;
         border-radius: @baseRadius;
         background-color: @lightGrey;
+    }
+
+    .no-top-border() {
+        margin-top: 0;
     }
 }
 
@@ -189,6 +286,7 @@
         left: 50%;
         margin-left: -7.5px;
         position: absolute;
+        z-index: 100;
     }
 }
 
