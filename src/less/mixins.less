@@ -191,3 +191,46 @@
         position: absolute;
     }
 }
+
+// Vlasni bloquote
+#vlasni-blockquotes {
+    .base-structure() {
+        background: @lightestGrey;
+        border: 1px solid @lightGrey;
+        padding: 20px 50px;
+        font-style: italic;
+        border-radius: @baseRadius;
+        color: @lightBlue;
+        font-size: @fontLG;
+        font-weight: @light;
+        position: relative;
+        margin: 50px 0;
+
+        p {
+            font-size: @fontLG;
+            font-weight: @light;
+        }
+    }
+
+    .with-quotes-icons {
+        &::before,
+        &::after {
+            position: absolute;
+            color: @greySecondary;
+            font-family: FontAwesome;
+            font-size: @fontMD;
+        }
+
+        &::before {
+            content: "\f10d";
+            top: 10px;
+            left: 20px;
+        }
+
+        &::after {
+            content: "\f10e";
+            top: 10px;
+            right: 20px;
+        }
+    }
+}
