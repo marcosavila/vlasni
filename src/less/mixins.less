@@ -1,3 +1,78 @@
+// Vlasni sections and structures
+#vertical-sections {
+    .base-styles() {
+        padding: @sectionVerticalPadding 0;
+
+        h2,
+        h3,
+        h4,
+        p {
+            text-align: center;
+        }
+
+        h2 {
+            font-size: @fontXL;
+            font-weight: @bold;
+
+            &.normal-text {
+                font-weight: @normal;
+            }
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-size: @fontSM;
+            font-weight: @bold;
+        }
+
+        .lead {
+            font-size: @fontMDS;
+            font-weight: normal;
+            line-height: 1.8;
+        }
+    }
+
+    .no-padding() {
+        padding: 0;
+    }
+
+    .clear-section() {
+        h2 {
+            color: @strongBlue;
+        }
+
+        h3 {
+            color: @orange;
+        }
+
+        .lead {
+            color: @grey;
+        }
+    }
+
+    .dark-bg() {
+        h2,
+        h3,
+        .lead {
+            color: @white;
+        }
+
+        .lead {
+            font-size: @fontMD;
+        }
+    }
+
+    .grey-bg() {
+        background: @lightestGrey;
+        border-top: 1px solid @lightGrey;
+
+        h3 {
+            color: @greySolid;
+            margin-bottom: 35px;
+        }
+    }
+}
+
 // Vlasni buttons mixins
 #vlasni-btn {
     .vlasni-btn-base() {
@@ -52,6 +127,27 @@
         padding-left: 0;
     }
 
+    .base-structure() {
+        margin-top: 55px;
+        margin-bottom: 55px;
+
+        h2,
+        h3 {
+            &.list-title {
+                color: @strongBlue;
+                font-weight: @bold;
+                font-size: @fontMD;
+                margin: 30px 0;
+                text-transform: unset;
+            }
+        }
+    }
+
+    .no-margin() {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
     .widget-list(@bg: @lightestGrey, @borderColor: @lightGrey) {
         > li {
             border: 1px solid @borderColor;
@@ -66,19 +162,85 @@
             &:last-child {
                 border-left: 0;
             }
+        }
+    }
+
+    .two-col-list() {
+        li {
+            position: relative;
+            overflow: hidden;
+
+            &:last-child {
+                .middle-list-colored {
+                    padding-bottom: 95px;
+                }
+
+                .middle-list-clear {
+                    padding-bottom: 122px;
+                }
+            }
+        }
+
+        .middle-list-colored,
+        .middle-list-clear {
+            width: 50%;
+            position: relative;
+            padding-top: 95px;
+            padding-bottom: 45px;
+            min-height: 325px;
+        }
+
+        .middle-list-colored {
+            background: @lightestGrey;
+            padding-right: 40px;
 
             img {
-                margin: 0 auto;
-                display: block;
+                margin-top: 75px;
+            }
+        }
+
+        .middle-list-clear {
+            position: absolute;
+            margin-left: 50%;
+            top: 0;
+            padding-left: 65px;
+            padding-right: 20%;
+            box-shadow: -1px 0 0 0 @lightGrey;
+
+            h2,
+            h3,
+            p {
+                text-align: left;
             }
 
             h2,
             h3 {
-                color: @strongBlue;
+                font-size: @fontXL;
                 font-weight: @bold;
-                font-size: @fontMD;
-                margin: 30px 0;
+                color: @strongBlue;
             }
+
+            p {
+                font-size: @fontMDS;
+                color: @grey;
+            }
+        }
+
+        .middle-list-step {
+            background: @white;
+            font-weight: @bold;
+            font-size: @fontMDS;
+            color: @grey;
+            border-radius: 50%;
+            padding: 10px;
+            border: 1px solid @greySecondary;
+            left: 50%;
+            line-height: 1;
+            margin-left: -21px;
+            padding: 13px 16px 9px;
+            position: absolute;
+            text-align: center;
+            top: 78px;
         }
     }
 }
@@ -88,10 +250,85 @@
     .center-aligned() {
         margin: 40px auto;
     }
+
+    .left-aligned() {
+        margin: 40px 0;
+    }
+
     .short-rounded() {
         width: 50px;
         height: 6px;
         border-radius: @baseRadius;
         background-color: @lightGrey;
+    }
+
+    .no-top-border() {
+        margin-top: 0;
+    }
+}
+
+// Vlasni triangle
+#triangle {
+    .base-generator() {
+        width: 0;
+        height: 0;
+        border-style: solid;
+    }
+
+    .to-bottom(@triangle-color) {
+        border-width: 12px 7.5px 0 7.5px;
+        border-color: @triangle-color transparent transparent transparent;
+    }
+
+    .bottom-out {
+        bottom: -12px;
+        content: "";
+        left: 50%;
+        margin-left: -7.5px;
+        position: absolute;
+        z-index: 100;
+    }
+}
+
+// Vlasni bloquote
+#vlasni-blockquotes {
+    .base-structure() {
+        background: @lightestGrey;
+        border: 1px solid @lightGrey;
+        padding: 20px 50px;
+        font-style: italic;
+        border-radius: @baseRadius;
+        color: @lightBlue;
+        font-size: @fontLG;
+        font-weight: @light;
+        position: relative;
+        margin: 50px 0;
+
+        p {
+            font-size: @fontLG;
+            font-weight: @light;
+        }
+    }
+
+    .with-quotes-icons {
+        &::before,
+        &::after {
+            position: absolute;
+            color: @greySecondary;
+            font-family: FontAwesome;
+            font-size: @fontMD;
+        }
+
+        &::before {
+            content: "\f10d";
+            top: 10px;
+            left: 20px;
+        }
+
+        &::after {
+            content: "\f10e";
+            top: 10px;
+            right: 20px;
+        }
     }
 }

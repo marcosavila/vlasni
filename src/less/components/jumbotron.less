@@ -5,9 +5,13 @@
     background: transparent;
     margin: 0;
     text-align: center;
-
     padding-top: 180px;
     padding-bottom: 180px;
+
+    &.short {
+        padding-top: 75px;
+        padding-bottom: 40px;
+    }
 
     h1 {
         font-size: @fontXXL;
@@ -17,6 +21,10 @@
         line-height: 1;
     }
 
+    p {
+        margin-bottom: 0;
+    }
+
     .lead {
         color: @white;
         font-size: @fontLG;
@@ -24,13 +32,51 @@
         line-height: 1.25;
     }
 
-    .btn-group {
-        margin: 55px 0;
+    .jumbotron-btn-container {
+        margin: 35px 0;
+
+        &.btn-group {
+            .btn {
+                &:first-child {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}
+
+/**
+ * Heroshot
+ */
+
+.hero-section {
+    background: @clearBlue;
+    padding-top: 75px;
+    position: relative;
+
+    &.hero-home {
+        background: url("images/vlasni-hero.jpg") no-repeat scroll 0 0 transparent;
+        background-size: 100% auto;
     }
 
-    .btn {
-        &:first-child {
-            margin-right: 30px;
+    &.hero-internal {
+        #gradient > .vertical(rgba(0,0,0,0.3); @clearBlue; @start-percent: 0%; @end-percent: 39%)
+    }
+
+    .hero-action {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+
+        i {
+            font-size: 21px;
+            color: @white;
         }
+    }
+
+    &::after {
+        #triangle > .base-generator;
+        #triangle > .to-bottom(@clearBlue);
+        #triangle > .bottom-out;
     }
 }

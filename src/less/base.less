@@ -8,7 +8,8 @@ h4,
 h5,
 h6,
 li,
-button {
+button,
+blockquote {
     font-family: @sansFontFamily;
 }
 
@@ -107,5 +108,30 @@ blockquote {
         img {
             margin-right: 20px;
         }
+    }
+}
+
+/**
+ * Sections & general structures
+ */
+
+.vlasni-section {
+    #vertical-sections > .base-styles;
+
+    &.section-compact {
+        #vertical-sections > .no-padding;
+        border-bottom: 1px solid @lightGrey;
+    }
+
+    &.clear-section {
+        #vertical-sections > .clear-section;
+    }
+
+    &.grey-section {
+        #vertical-sections > .grey-bg;
+    }
+
+    &.strong-bgcolor {
+        #vertical-sections > .dark-bg;
     }
 }
