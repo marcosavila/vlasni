@@ -123,6 +123,22 @@
         padding-left: 0;
     }
 
+    .base-structure() {
+        margin-top: 55px;
+        margin-bottom: 55px;
+
+        h2,
+        h3 {
+            &.list-title {
+                color: @strongBlue;
+                font-weight: @bold;
+                font-size: @fontMD;
+                margin: 30px 0;
+                text-transform: unset;
+            }
+        }
+    }
+
     .widget-list(@bg: @lightestGrey, @borderColor: @lightGrey) {
         > li {
             border: 1px solid @borderColor;
@@ -136,19 +152,6 @@
 
             &:last-child {
                 border-left: 0;
-            }
-
-            img {
-                margin: 0 auto;
-                display: block;
-            }
-
-            h2,
-            h3 {
-                color: @strongBlue;
-                font-weight: @bold;
-                font-size: @fontMD;
-                margin: 30px 0;
             }
         }
     }
