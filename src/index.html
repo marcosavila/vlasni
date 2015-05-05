@@ -47,7 +47,7 @@
                             <a href="#">{{ 'NAVIGATION_ABOUT' | translate }}</a>
                         </li>
                         <li>
-                            <a href="#">{{ 'NAVIGATION_PRICING' | translate }}</a>
+                            <a href ui-sref="pricing">{{ 'NAVIGATION_PRICING' | translate }}</a>
                         </li>
                         <li>
                             <a href="#">{{ 'NAVIGATION_FAQ' | translate }}</a>
@@ -64,7 +64,7 @@
             </div>
         </div>
 
-    <div ui-view="main"></div>
+    <div ui-view="main" ng-class="state_name"></div>
 
     <footer class="footer">
         <div class="container">

@@ -17,7 +17,7 @@ angular.module( 'vlasni.how-works', [
   });
 })
 
-.controller( 'HowWorksCtrl', function AboutCtrl( $scope ) {
+.controller( 'HowWorksCtrl', function HowWorksCtrl( $scope ) {
 
 })
 

@@ -4,7 +4,8 @@ angular.module( 'vlasni', [
   'vlasni.home',
   'vlasni.how-works',
   'ui.router',
-  'pascalprecht.translate'
+  'pascalprecht.translate',
+  'vlasni.pricing'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider, $translateProvider ) {
@@ -36,6 +37,8 @@ angular.module( 'vlasni', [
     if ( angular.isDefined( toState.data.pageTitle ) ) {
       $scope.pageTitle = toState.data.pageTitle + ' | Vlasni' ;
     }
+
+    $scope.state_name = toState.name;
   });
 })
 
