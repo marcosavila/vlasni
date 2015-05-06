@@ -70,5 +70,7 @@
     "PRICING_PLAN_AMOUNT_PERIOD_ANUAL": "per year",
     "PRICING_PLAN_DETAIL_TEXT_DELIVERABLES": "Deliverables",
     "PRICING_PLAN_DETAIL_TEXT_DELIVERABLES_UNIT": "deliverable unit",
-    "PRICING_PLAN_CHOOSE": "Choose plan"
+    "PRICING_PLAN_CHOOSE": "Choose plan",
+    "OTHER_PLANS_VIEW_OTHERS": "View other plans",
+    "OTHER_PLANS_CUSTOM_PLAN": "Custom plan"
 }

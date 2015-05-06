@@ -70,5 +70,7 @@
     "PRICING_PLAN_AMOUNT_PERIOD_ANUAL": "por año",
     "PRICING_PLAN_DETAIL_TEXT_DELIVERABLES": "Entregables",
     "PRICING_PLAN_DETAIL_TEXT_DELIVERABLES_UNIT": "Enidad entregable",
-    "PRICING_PLAN_CHOOSE": "Elija el plan"
+    "PRICING_PLAN_CHOOSE": "Elija el plan",
+    "OTHER_PLANS_VIEW_OTHERS": "Vea otros planes",
+    "OTHER_PLANS_CUSTOM_PLAN": "Plan personalizado"
 }
