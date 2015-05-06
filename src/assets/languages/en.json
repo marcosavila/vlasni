@@ -78,5 +78,19 @@
     "PRICING_NOTIFICATIONS_TEXT": "The platform to manage personalized advertising campaigns, with individuals deliveries, noninvasive",
     "QUICK_VIEW_MAIN_TITLE": "Quick view",
     "QUICK_VIEW_TEXT": "Vlasni applies predictives algorithms for matching user interests and advertising offers",
-    "QUICK_VIEW_LINKTEXT_DEMO": "Request a demo"
+    "QUICK_VIEW_LINKTEXT_DEMO": "Request a demo",
+    "QUICK_VIEW_TOOLS_LABEL": "Our tools",
+    "QUICK_VIEW_TOOLS_TITLE": "Advertisers have access to a complete tool for managing the service and to a mobile application for the end user -with a minimalist design- aimed at all audiences.",
+    "QUICK_VIEW_DASHBOARD_TITLE": "Dashboard",
+    "QUICK_VIEW_DASHBOARD_TEXT": "All relevant information in one place",
+    "QUICK_VIEW_SHOPCART_TITLE": "Purchase Packages",
+    "QUICK_VIEW_SHOPCART_TEXT": "Service packages purchase can be fully managed fromt within the administrative tool",
+    "QUICK_VIEW_OFFERS_TITLE": "Offers Management",
+    "QUICK_VIEW_OFFERS_TEXT": "A complete tool to manage advertising campaigns.",
+    "QUICK_VIEW_SIGNUP_TITLE": "Sign Up",
+    "QUICK_VIEW_SIGNUP_TEXT": "Easy and fast download and sign-up.",
+    "QUICK_VIEW_NOTIFICATIONS_TITLE": "Notifications",
+    "QUICK_VIEW_NOTIFICATIONS_TEXT": "Advertising alerts are based on geo positioning, dates and time, events, weather.",
+    "QUICK_VIEW_INTERACTIVE_TITLE": "Interactive Contents",
+    "QUICK_VIEW_INTERACTIVE_TEXT": "Contesnts are as dynamic as advertiser choose"
 }

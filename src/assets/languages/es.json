@@ -78,5 +78,19 @@
     "PRICING_NOTIFICATIONS_TEXT": "La plataforma para gestionar campañas publicitarias personalizadas, con entregas individuales, no invasivos",
     "QUICK_VIEW_MAIN_TITLE": "Vista rápida",
     "QUICK_VIEW_TEXT": "Vlasni aplica algoritmos predictivos para hacer coincidir los intereses de los usuarios y ofertas publicitarias",
-    "QUICK_VIEW_LINKTEXT_DEMO": "Solicite una demostración"
+    "QUICK_VIEW_LINKTEXT_DEMO": "Solicite una demostración",
+    "QUICK_VIEW_TOOLS_LABEL": "Nuestras herramientas",
+    "QUICK_VIEW_TOOLS_TITLE": "Los anunciantes tienen acceso a una completa herramienta para la gestión del servicio y para una aplicación móvil para el usuario final -con un diseño- minimalista dirigido a todos los públicos.",
+    "QUICK_VIEW_DASHBOARD_TITLE": "Escritorio",
+    "QUICK_VIEW_DASHBOARD_TEXT": "Toda la información relevante en un solo lugar",
+    "QUICK_VIEW_SHOPCART_TITLE": "Compa por paquetes",
+    "QUICK_VIEW_SHOPCART_TEXT": "Paquetes de servicios de compra pueden ser manejados completamente desde dentro de la herramienta administrativa",
+    "QUICK_VIEW_OFFERS_TITLE": "Gestión de ofertas",
+    "QUICK_VIEW_OFFERS_TEXT": "Una completa herramienta para gestionar campañas de publicidad.",
+    "QUICK_VIEW_SIGNUP_TITLE": "Registro",
+    "QUICK_VIEW_SIGNUP_TEXT": "Descarga fácil y rápido y de registro.",
+    "QUICK_VIEW_NOTIFICATIONS_TITLE": "Notificaciones",
+    "QUICK_VIEW_NOTIFICATIONS_TEXT": "Alertas de publicidad se basan en posicionamiento geo, las fechas y el tiempo, eventos, clima.",
+    "QUICK_VIEW_INTERACTIVE_TITLE": "Contenido interactivo",
+    "QUICK_VIEW_INTERACTIVE_TEXT": "Los contenidos son tan dinámicos como el anunciante elija"
 }
