@@ -61,5 +61,14 @@
     "HOW_IT_WORKS_STEPS_TITLE_3": "Results",
     "HOW_IT_WORKS_STEPS_TEXT_3": "The results are organized obtaining individualized advertising campaigns, avoiding content that has no correspondence with the recipient.",
     "PRICING_MAIN_TITLE": "Pricing",
-    "PRICING_TEXT": "Vlasni applies predictives algorithms for matching user interests and advertising offers"
+    "PRICING_TEXT": "Vlasni applies predictives algorithms for matching user interests and advertising offers",
+    "PRICING_CAMPAIGNS_TITLE": "Advertising campaigns",
+    "PRICING_CAMPAIGNS_TEXT": "The platform to manage personalized advertising campaigns, with individuals deliveries, noninvasive",
+    "PRICING_PLAN_TITLE_PERSONAL": "Personal",
+    "PRICING_PLAN_TITLE_PREMIUM": "Premium",
+    "PRICING_PLAN_TITLE_CORPORATE": "Corporate",
+    "PRICING_PLAN_AMOUNT_PERIOD_ANUAL": "per year",
+    "PRICING_PLAN_DETAIL_TEXT_DELIVERABLES": "Deliverables",
+    "PRICING_PLAN_DETAIL_TEXT_DELIVERABLES_UNIT": "deliverable unit",
+    "PRICING_PLAN_CHOOSE": "Choose plan"
 }

@@ -162,6 +162,85 @@
         }
     }
 
+    .pricing-plan-list(@bg: @lightestGrey, @borderColor: @lightGrey) {
+        .no-margin();
+
+        > li {
+            border: 1px solid @borderColor;
+            background: @bg;
+            padding: 30px 0 0;
+
+            &:first-child {
+                border-radius: @baseRadius 0 0 0;
+                border-right: 0;
+            }
+
+            &:last-child {
+                border-radius: 0 @baseRadius 0 0;
+                border-left: 0;
+            }
+
+            h2,
+            h3,
+            p {
+                margin: 0;
+            }
+
+            .list-title {
+                font-size: @fontLG;
+                font-weight: @bold;
+                color: @strongBlue;
+                text-transform: capitalize;
+            }
+
+            .plan-anual-amount {
+                color: @grey;
+                font-size: @fontMD;
+                line-height: 1;
+
+                i,
+                span {
+                    color: @orange;
+                    vertical-align: middle;
+                }
+
+                i {
+                    font-size: @fontLG;
+                    font-style: normal;
+                    font-weight: normal;
+                }
+
+                span {
+                    font-size: @fontXXL;
+                    font-weight: @bold;
+                }
+            }
+        }
+
+        .detail-section {
+            background: @lightestGreyDark;
+            border-top: 1px solid @borderColor;
+            margin-top: 20px;
+            padding: 20px 0;
+            text-align: center;
+
+            p {
+                color: @grey;
+                font-size: @fontMDS;
+
+                span {
+                    color: @strongBlue;
+                    font-weight: @bold;
+                }
+            }
+
+            .btn {
+                min-width: 200px;
+                margin-top: 20px;
+            }
+        }
+    }
+
     .two-col-list() {
         li {
             position: relative;
@@ -244,6 +323,11 @@
 
 // Vlasni dividers and separator elements
 #dividers {
+    // ToDo - apply this approach to all dividers with margin
+    .divider-margin(@vertical, @horizontal) {
+        margin: @vertical @horizontal;
+    }
+
     .center-aligned() {
         margin: 40px auto;
     }
