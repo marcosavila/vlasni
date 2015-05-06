@@ -97,5 +97,8 @@
     "QUICK_VIEW_OUR_PLANS_TEXT": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
     "QUICK_VIEW_OUR_PLANS_LINKTEXT": "View pricing",
     "ABOUT_US_MAIN_TITLE": "About us",
-    "ABOUT_US_TEXT": "How Vlasni arose, what steps we took, and what does 'Vlasni' mean?"
+    "ABOUT_US_TEXT": "How Vlasni arose, what steps we took, and what does 'Vlasni' mean?",
+    "ABOUT_US_FIRST_STEPS_LABEL": "Our first steps",
+    "ABOUT_US_FIRST_STEPS_TITLE": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "ABOUT_US_FIRST_STEPS_TEXT": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
 }
