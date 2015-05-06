@@ -72,5 +72,8 @@
     "PRICING_PLAN_DETAIL_TEXT_DELIVERABLES_UNIT": "Enidad entregable",
     "PRICING_PLAN_CHOOSE": "Elija el plan",
     "OTHER_PLANS_VIEW_OTHERS": "Vea otros planes",
-    "OTHER_PLANS_CUSTOM_PLAN": "Plan personalizado"
+    "OTHER_PLANS_CUSTOM_PLAN": "Plan personalizado",
+    "PRICING_CAMPAIGNS_FOOTNOTE": "Lorem ipsum dolor sit amet",
+    "PRICING_NOTIFICATIONS_TITLE": "Notificaciones",
+    "PRICING_NOTIFICATIONS_TEXT": "La plataforma para gestionar campañas publicitarias personalizadas, con entregas individuales, no invasivos"
 }
