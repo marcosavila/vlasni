@@ -75,5 +75,8 @@
     "OTHER_PLANS_CUSTOM_PLAN": "Custom plan",
     "PRICING_CAMPAIGNS_FOOTNOTE": "Lorem ipsum dolor sit amet",
     "PRICING_NOTIFICATIONS_TITLE": "Notifications",
-    "PRICING_NOTIFICATIONS_TEXT": "The platform to manage personalized advertising campaigns, with individuals deliveries, noninvasive"
+    "PRICING_NOTIFICATIONS_TEXT": "The platform to manage personalized advertising campaigns, with individuals deliveries, noninvasive",
+    "QUICK_VIEW_MAIN_TITLE": "Quick view",
+    "QUICK_VIEW_TEXT": "Vlasni applies predictives algorithms for matching user interests and advertising offers",
+    "QUICK_VIEW_LINKTEXT_DEMO": "Request a demo"
 }
