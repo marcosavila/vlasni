@@ -7,6 +7,12 @@
     > .dropdown-toggle:not(:first-child) {
         border-radius: 2px;
     }
+
+    .btn {
+        &:first-child {
+            margin-right: 30px;
+        }
+    }
 }
 
 .btn-default {
@@ -22,4 +28,9 @@
 .btn-transparent {
     #vlasni-btn > .vlasni-btn-base;
     #vlasni-btn > .transparent(@white, @white);
+}
+
+.btn-transparent-grey {
+    #vlasni-btn > .vlasni-btn-base;
+    #vlasni-btn > .transparent(@lightGrey, @grey);
 }
