@@ -17,7 +17,7 @@ angular.module( 'vlasni.quick-view', [
   });
 })
 
-.controller( 'QuickViewCtrl', function PricingCtrl( $scope ) {
+.controller( 'QuickViewCtrl', function QuickViewCtrl( $scope ) {
 
 })
 

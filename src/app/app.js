@@ -6,7 +6,8 @@ angular.module( 'vlasni', [
   'ui.router',
   'pascalprecht.translate',
   'vlasni.pricing',
-  'vlasni.quick-view'
+  'vlasni.quick-view',
+  'vlasni.about-us'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider, $translateProvider ) {
