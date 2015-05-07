@@ -112,5 +112,7 @@
     "ABOUT_US_STEP_2013_TITLE": "Interest in the product",
     "ABOUT_US_STEP_2013_TEXT": "Potential clients are enthusiastic about the idea; technical feasibility is possible; project code DV0166 is born.",
     "ABOUT_US_STEP_2014_TITLE": "Let's do it",
-    "ABOUT_US_STEP_2014_TEXT": "Product development begins; the name 'Vlasni' is chosen for it, which is a modification of the Czech term 'Vlastni' meaning 'Custom'; The expected release date is june / 2015."
+    "ABOUT_US_STEP_2014_TEXT": "Product development begins; the name 'Vlasni' is chosen for it, which is a modification of the Czech term 'Vlastni' meaning 'Custom'; The expected release date is june / 2015.",
+    "FAQ_TITLE": "Faq",
+    "FAQ_TEXT": "Vlasni applies predictive algorithms for matching users interests and advertising offers."
 }
