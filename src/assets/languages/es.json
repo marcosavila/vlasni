@@ -113,7 +113,7 @@
     "ABOUT_US_STEP_2013_TEXT": "Los clientes potenciales están entusiasmados con la idea; viabilidad técnica es posible; código de proyecto DV0166 nace.",
     "ABOUT_US_STEP_2014_TITLE": "Vamos a hacerlo",
     "ABOUT_US_STEP_2014_TEXT": "El desarrollo de productos comienza; el nombre 'Vlasni' se elige para ella, que es una modificación de la palabra checa 'Vlastni' que significa 'Custom'; la fecha de lanzamiento prevista es junio / 2015.",
-    "FAQ_TTITLE": "Preguntas frecuentes",
+    "FAQ_TITLE": "Preguntas frecuentes",
     "FAQ_TEXT": "Vlasni aplica algoritmos predictivos para hacer coincidir los intereses de los usuarios y ofertas publicitarias.",
     "FAQ_QUESTION_1_TITLE": "Información del entorno",
     "FAQ_QUESTION_1_TEXT": "Él / ella no lo hace: utilizamos los datos proporcionados por los anunciantes para crear un perfil de usuario que actualizamos permanentemente. Los intereses se generan automáticamente.",
@@ -134,5 +134,12 @@
     "FAQ_QUESTION_5_TEXT_ITEM_4_TITLE": "Contenido pricipal",
     "FAQ_QUESTION_5_TEXT_ITEM_4_TEXT": "Los detalles muy específicos del anuncio, muestran al usuario cuando él / ella ha mostrado interés en el anuncio. Este contenido actúa como un portal para diferentes formas de interactuar con el usuario, que puede ir desde una imagen estática de un juego interactivo.",
     "FAQ_QUESTION_5_TEXT_ITEM_5_TITLE": "Mecanismo de activación",
-    "FAQ_QUESTION_5_TEXT_ITEM_5_TEXT": "Los mecanismos diferentes por los cuales el anuncio debe ser activado."
+    "FAQ_QUESTION_5_TEXT_ITEM_5_TEXT": "Los mecanismos diferentes por los cuales el anuncio debe ser activado.",
+    "CONTACT_TITLE": "Contacto",
+    "CONTACT_TEXT": "Vlasni aplica algoritmos predictivos para hacer coincidir los intereses de los usuarios y ofertas publicitarias.",
+    "CONTACT_NAME": "Nombre",
+    "CONTACT_EMAIL": "Email",
+    "CONTACT_PHONE": "Teléfono",
+    "CONTACT_COMMENT": "Comentario",
+    "CONTACT_SEND": "Enviar mensaje"
 }

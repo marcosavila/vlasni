@@ -134,5 +134,12 @@
     "FAQ_QUESTION_5_TEXT_ITEM_4_TITLE": "Main content",
     "FAQ_QUESTION_5_TEXT_ITEM_4_TEXT": "The very specific details of the Ad, displayed to the user when he/she has shown interests in the Ad. This content acts like a portal to different ways to interact with the user, which can go from a static image to an interactive game.",
     "FAQ_QUESTION_5_TEXT_ITEM_5_TITLE": "Activation mechanism",
-    "FAQ_QUESTION_5_TEXT_ITEM_5_TEXT": "The differents mechanisms by which the Ad must be activated."
+    "FAQ_QUESTION_5_TEXT_ITEM_5_TEXT": "The differents mechanisms by which the Ad must be activated.",
+    "CONTACT_TITLE": "Contact",
+    "CONTACT_TEXT": "Vlasni applies predictive algorithms for matching users interests and advertising offers.",
+    "CONTACT_NAME": "Name",
+    "CONTACT_EMAIL": "Email",
+    "CONTACT_PHONE": "Phone",
+    "CONTACT_COMMENT": "Comment",
+    "CONTACT_SEND": "Send message"
 }

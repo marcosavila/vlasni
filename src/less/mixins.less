@@ -698,3 +698,41 @@
         }
     }
 }
+
+// Vlasni forms
+#vlasni-forms {
+    .base-structure() {
+        border-radius: @baseRadius;
+        border: 1px solid @lightGrey;
+        padding: 40px 30px 30px;
+
+        input,
+        textarea {
+            border-radius: @baseRadius;
+            border-color: @lightGrey;
+            box-shadow: none;
+        }
+
+        label {
+            color: @grey;
+            font-size: 15px;
+            font-weight: @normal;
+        }
+
+        input {
+            min-height: 40px;
+        }
+
+        textarea {
+            min-height: 207px;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+    }
+
+    .form-bg(@bgColor) {
+        background: @bgColor;
+    }
+}
