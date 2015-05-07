@@ -51,8 +51,10 @@ blockquote {
         > .active {
             > a {
                 background: transparent;
+                color: @blue;
 
-                &:hover {
+                &:hover,
+                &:focus {
                     background: transparent;
                 }
 
@@ -74,7 +76,6 @@ blockquote {
         > li,
         > .active {
             > a {
-                color: @white;
                 font-size: 15px;
                 font-weight: @semibold;
 
@@ -83,9 +84,20 @@ blockquote {
                     text-decoration: underline;
                 }
 
+                &:focus {
+                    color: @blue;
+                    outline: none
+                }
+
                 &.lang-selector {
                     color: @blue;
                 }
+            }
+        }
+
+        > li {
+            a {
+                color: @white;
             }
         }
     }
