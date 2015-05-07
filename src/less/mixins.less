@@ -1,3 +1,18 @@
+// Common elements
+#common {
+    .bubble(@bgColor: @white, @borderColor: @greySecondary) {
+        background: @bgColor;
+        font-weight: @bold;
+        font-size: @fontMDS;
+        color: @grey;
+        border-radius: 50%;
+        padding: 13px 16px 9px;
+        border: 1px solid @borderColor;
+        line-height: 1;
+        text-align: center;
+    }
+}
+
 // Vlasni sections and structures
 #vertical-sections {
     .base-styles() {
@@ -201,10 +216,43 @@
             background: @lightestGrey;
             border: 1px solid @lightGrey;
             border-radius: @baseRadius;
+            padding-top: 60px;
 
             > li {
                 padding-left: 75px;
                 padding-right: 75px;
+                position: relative;
+
+                .step-list-number {
+                    #common > .bubble;
+                    position: absolute;
+                    left: -21px;
+                    top: -10px;
+                }
+
+                li {
+                    color: @grey;
+                }
+            }
+
+            i {
+                color: @opaqueBlue;
+                font-size: @fontSM;
+                margin-right: 12px;
+            }
+
+            .step-list-title,
+            .step-list-text {
+                text-align: left;
+            }
+
+            .step-list-title {
+                font-size: @fontLG;
+                color: @strongBlue;
+            }
+
+            .step-list-text {
+                color: @grey;
             }
         }
 
@@ -402,19 +450,10 @@
         }
 
         .middle-list-step {
-            background: @white;
-            font-weight: @bold;
-            font-size: @fontMDS;
-            color: @grey;
-            border-radius: 50%;
-            padding: 10px;
-            border: 1px solid @greySecondary;
+            #common > .bubble;
             left: 50%;
-            line-height: 1;
             margin-left: -21px;
-            padding: 13px 16px 9px;
             position: absolute;
-            text-align: center;
             top: 78px;
         }
 
