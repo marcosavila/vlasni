@@ -104,5 +104,13 @@
     "ABOUT_US_BE_PART_LABEL": "Be part of our story",
     "ABOUT_US_BE_PART_TEXT": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "ABOUT_US_PRICING": "View our pricing",
-    "ABOUT_US_LINKTEXT_DEMO": "Request a demo"
+    "ABOUT_US_LINKTEXT_DEMO": "Request a demo",
+    "ABOUT_US_STEP_2011_TITLE": "Just an idea",
+    "ABOUT_US_STEP_2011_TEXT": "The idea is brewing combining consumer experience with business cases that failed to solve the problem of invasive advertising",
+    "ABOUT_US_STEP_2012_TITLE": "Initial sketches",
+    "ABOUT_US_STEP_2012_TEXT": "Slowly begin to consolidate the idea and perform proofs of concept in order to choose the right technologies",
+    "ABOUT_US_STEP_2013_TITLE": "Interest in the product",
+    "ABOUT_US_STEP_2013_TEXT": "Potential clients are enthusiastic about the idea; technical feasibility is possible; project code DV0166 is born.",
+    "ABOUT_US_STEP_2014_TITLE": "Let's do it",
+    "ABOUT_US_STEP_2014_TEXT": "Product development begins; the name 'Vlasni' is chosen for it, which is a modification of the Czech term 'Vlastni' meaning 'Custom'; The expected release date is june / 2015."
 }
