@@ -16,6 +16,16 @@ label {
     font-family: @sansFontFamily;
 }
 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 blockquote {
     border-left: 0;
     font-size: 25px;
