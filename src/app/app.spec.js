@@ -1,6 +1,6 @@
 describe( 'AppCtrl', function() {
     describe( 'isCurrentUrl', function() {
-        var AppCtrl, $location, $scope;
+        var AppCtrl, $location, $scope, $language, $translate;
 
         beforeEach( module( 'vlasni' ) );
 

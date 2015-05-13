@@ -38,7 +38,7 @@ angular.module( 'vlasni.home', [
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'HomeCtrl', function HomeController( $scope ) {
+.controller( 'HomeCtrl', function HomeCtrl( $scope ) {
 })
 
 ;
