@@ -1,6 +1,5 @@
 angular.module( 'vlasni.quick-view', [
   'ui.router',
-  'placeholders',
   'ui.bootstrap'
 ])
 

@@ -1,6 +1,5 @@
 angular.module( 'vlasni.about-us', [
   'ui.router',
-  'placeholders',
   'ui.bootstrap'
 ])
 

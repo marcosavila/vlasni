@@ -1,6 +1,5 @@
 angular.module( 'vlasni.pricing', [
   'ui.router',
-  'placeholders',
   'ui.bootstrap'
 ])
 

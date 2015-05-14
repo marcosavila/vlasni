@@ -1,6 +1,5 @@
 angular.module( 'vlasni.contact', [
   'ui.router',
-  'placeholders',
   'ui.bootstrap'
 ])
 

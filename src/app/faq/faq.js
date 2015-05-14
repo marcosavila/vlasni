@@ -1,6 +1,5 @@
 angular.module( 'vlasni.faq', [
   'ui.router',
-  'placeholders',
   'ui.bootstrap'
 ])
 
