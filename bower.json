@@ -8,7 +8,8 @@
     "angular-bootstrap": "~0.10.0",
     "angular-ui-router": "~0.2",
     "angular-translate": "~2.6.1",
-    "angular-translate-loader-static-files": "~2.6.1"
+    "angular-translate-loader-static-files": "~2.6.1",
+    "flag-icon-css": "~0.7.1"
   },
   "dependencies": {}
 }
