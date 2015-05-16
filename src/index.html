@@ -55,18 +55,21 @@
                         <li ui-sref-active="active">
                             <a href ui-sref="contact">{{ 'NAVIGATION_CONTACT' | translate }}</a>
                         </li>
-                        <li>
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-                              <span>{{ activeLang }}</span>
-                              <span class="flag-icon flag-icon-gr"></span>
+                        <li class="dropdown lang-selector">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" role="button" aria-expanded="false">
+                              <span class="flag-icon flag-icon-{{ activeLang }}"></span>
                               <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
                                 <li>
-                                    <a class="lang-selector" href="javascript:;" data-ng-click="changeLanguage('en')" data-ng-show="activeLang == 'es'">{{ 'LANGUAGE_SELECTOR_EN' | translate }}</a>
+                                    <a href="javascript:;" data-ng-click="changeLanguage('us')" data-ng-show="activeLang == 'es'" title="{{ 'LANGUAGE_SELECTOR_US' | translate }}">
+                                        <span class="flag-icon flag-icon-us"></span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a class="lang-selector" href="javascript:;" data-ng-click="changeLanguage('es')" data-ng-show="activeLang == 'en'">{{ 'LANGUAGE_SELECTOR_ES' | translate }}</a>
+                                    <a href="javascript:;" data-ng-click="changeLanguage('es')" data-ng-show="activeLang == 'us'" title="{{ 'LANGUAGE_SELECTOR_ES' | translate }}">
+                                        <span class="flag-icon flag-icon-es"></span>
+                                    </a>
                                 </li>
                             </ul>
                         </li>
