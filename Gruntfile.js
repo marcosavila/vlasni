@@ -110,14 +110,36 @@ module.exports = function ( grunt ) {
       },
       build_vendor_assets: {
         files: [
-          { 
+          {
             src: [ '<%= vendor_files.assets %>' ],
             dest: '<%= build_dir %>/assets/',
             cwd: '.',
             expand: true,
             flatten: true
           }
-       ]   
+       ]
+      },
+      build_vendor_flags_1x1: {
+        files: [
+          {
+            src: [ '<%= vendor_files.flags1x1 %>' ],
+            dest: '<%= build_dir %>/assets/flags/1x1/',
+            cwd: '.',
+            expand: true,
+            flatten: true
+          }
+       ]
+      },
+      build_vendor_flags_4x3: {
+        files: [
+          {
+            src: [ '<%= vendor_files.flags4x3 %>' ],
+            dest: '<%= build_dir %>/assets/flags/4x3/',
+            cwd: '.',
+            expand: true,
+            flatten: true
+          }
+       ]
       },
       build_appjs: {
         files: [
@@ -487,7 +509,7 @@ module.exports = function ( grunt ) {
         files: [ 
           'src/assets/**/*'
         ],
-        tasks: [ 'copy:build_app_assets', 'copy:build_vendor_assets' ]
+        tasks: [ 'copy:build_app_assets', 'copy:build_vendor_assets', 'copy:build_vendor_flags_1x1', 'copy:build_vendor_flags_4x3' ]
       },
 
       /**
@@ -569,7 +591,7 @@ module.exports = function ( grunt ) {
    */
   grunt.registerTask( 'build', [
     'clean', 'html2js', 'jshint', 'coffeelint', 'coffee', 'less:build',
-    'concat:build_css', 'copy:build_app_assets', 'copy:build_vendor_assets',
+    'concat:build_css', 'copy:build_app_assets', 'copy:build_vendor_assets', 'copy:build_vendor_flags_1x1', 'copy:build_vendor_flags_4x3',
     'copy:build_appjs', 'copy:build_vendorjs', 'copy:build_vendorcss', 'index:build', 'karmaconfig',
     'karma:continuous' 
   ]);

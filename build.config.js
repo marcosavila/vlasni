@@ -72,6 +72,12 @@ module.exports = {
     css: [
     ],
     assets: [
+    ],
+    flags1x1: [
+      'vendor/flag-icon-css/flags/1x1/*.svg'
+    ],
+    flags4x3: [
+      'vendor/flag-icon-css/flags/4x3/*.svg'
     ]
   },
 };

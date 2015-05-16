@@ -3,10 +3,10 @@
     .bubble(@bgColor: @white, @borderColor: @greySecondary) {
         background: @bgColor;
         font-weight: @bold;
-        font-size: @fontMDS;
+        font-size: @fontSM;
         color: @grey;
         border-radius: 50%;
-        padding: 13px 16px 9px;
+        padding: 11px 16px;
         border: 1px solid @borderColor;
         line-height: 1;
         text-align: center;
@@ -41,7 +41,7 @@
         }
 
         .lead {
-            font-size: @fontMDS;
+            font-size: @fontSM;
             font-weight: normal;
             line-height: 1.8;
         }
@@ -116,7 +116,7 @@
         text-transform: uppercase;
         font-weight: @bold;
         line-height: 1;
-        font-size: @fontMDS;
+        font-size: @fontSM;
         padding: 14px 24px;
         border-radius: 2px;
         border-width: 2px;
@@ -207,6 +207,11 @@
 
             &:last-child {
                 border-left: 0;
+            }
+
+            p {
+                color: @grey;
+                line-height: 2;
             }
         }
     }
@@ -444,7 +449,7 @@
             }
 
             p {
-                font-size: @fontMDS;
+                font-size: @fontSM;
                 color: @grey;
             }
         }
@@ -671,7 +676,7 @@
         margin: 50px 0;
 
         p {
-            font-size: @fontLG;
+            font-size: @fontMD;
             font-weight: @light;
         }
     }
