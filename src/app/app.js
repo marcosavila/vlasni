@@ -20,9 +20,10 @@ angular.module( 'vlasni', [
     'suffix': '.json'
   });
 
-  $translateProvider.translations('en');
+  // Languages must follow the patter from ISO 3166-1-alpha-2 country code
+  $translateProvider.translations('us');
   $translateProvider.translations('es');
-  $translateProvider.preferredLanguage('en');
+  $translateProvider.preferredLanguage('us');
 
 })
 
