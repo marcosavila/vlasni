@@ -22,8 +22,8 @@ angular.module( 'vlasni', [
 
   // Languages must follow the patter from ISO 3166-1-alpha-2 country code
   $translateProvider.translations('us');
-  $translateProvider.translations('es');
-  $translateProvider.preferredLanguage('us');
+  $translateProvider.translations('ar');
+  $translateProvider.preferredLanguage('ar');
 
 })
 
