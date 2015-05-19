@@ -58,6 +58,17 @@ blockquote {
 }
 
 .navbar-default {
+    .navbar-collapse {
+        margin-top: 10px;
+        max-height: none;
+        border-color: @bgBlue;
+
+        @media (min-width: @screen-sm-min) {
+            float: right;
+            margin-top: 0px;
+        }
+    }
+
     .navbar-nav {
         > .active {
             > a {
@@ -80,7 +91,12 @@ blockquote {
             > a,
             > a:hover,
             > a:focus {
-                background: @bgBlue;
+                background: transparent;
+                color: @white;
+
+                @media (min-width: @screen-sm-min) {
+                    background: @bgBlue;
+                }
             }
         }
 
@@ -99,8 +115,13 @@ blockquote {
                 }
 
                 &:hover {
+                    background: @bgBlue;
                     color: @white;
                     text-decoration: underline;
+
+                    @media (min-width: @screen-sm-min) {
+                        background: transparent;
+                    }
 
                     &.dropdown-toggle {
                         text-decoration: none;
@@ -113,11 +134,13 @@ blockquote {
                 }
 
                 &.dropdown-toggle {
-                    background: @bgBlue;
-                    border-radius: @baseRadius * 2;
-                    margin-bottom: -2px;
-                    margin-top: 10px;
-                    padding: 5px 10px;
+                    @media (min-width: @screen-sm-min) {
+                        background: @bgBlue;
+                        border-radius: @baseRadius * 2;
+                        margin-bottom: -2px;
+                        margin-top: 10px;
+                        padding: 5px 10px;
+                    }
 
                     &:hover {
                         text-decoration: none;
@@ -140,6 +163,26 @@ blockquote {
             }
         }
     }
+
+    .navbar-toggle {
+        border: 0 none;
+
+        &:hover,
+        &:focus {
+            background: transparent;
+        }
+
+        .icon-bar {
+            background-color: @white;
+        }
+    }
+}
+
+.navbar-toggle {
+    .icon-bar {
+        height: 3px;
+        border-radius: 0;
+    }
 }
 
 .dropdown-menu {
@@ -159,10 +202,22 @@ blockquote {
     }
 
     .dropdown-menu {
-        max-width: 52px;
-        min-width: 52px;
+        @media (min-width: @screen-sm-min) {
+            max-width: 52px;
+            min-width: 52px;
+        }
 
         > li {
+            border-bottom: 1px solid @greySolid;
+
+            &:last-child {
+                border-bottom: 0;
+            }
+
+            @media (min-width: @screen-sm-min) {
+                border-bottom: 0;
+            }
+
             > a {
                 padding: 3px 15px;
             }

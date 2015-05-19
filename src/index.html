@@ -45,7 +45,7 @@
                     </a>
                 </div>
 
-                <div class="collapse navbar-collapse pull-right" collapse="menuCollapsed">
+                <div class="collapse navbar-collapse" collapse="menuCollapsed">
                     <ul class="nav navbar-nav">
                         <li ui-sref-active="active">
                             <a href ui-sref="how-works">{{ 'NAVIGATION_HOW_IT_WORKS' | translate }}</a>
@@ -67,17 +67,28 @@
                         </li>
                         <li class="dropdown lang-selector">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" role="button" aria-expanded="false">
-                              <span class="flag-icon flag-icon-{{ activeLang }}"></span>
-                              <span class="caret"></span>
+                              <span class="hidden-xs flag-icon flag-icon-{{ activeLang }}"></span>
+                              <span class="hidden-xs caret"></span>
+                              <span class="visible-xs">{{ 'LANG_SELECTOR_MOBILE' | translate }}</span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                                <li>
+                                <li class="hidden-xs">
                                     <a href="javascript:;" data-ng-click="changeLanguage('us')" data-ng-show="activeLang == 'ar'" title="{{ 'LANGUAGE_SELECTOR_US' | translate }}">
                                         <span class="flag-icon flag-icon-us"></span>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="hidden-xs">
                                     <a href="javascript:;" data-ng-click="changeLanguage('ar')" data-ng-show="activeLang == 'us'" title="{{ 'LANGUAGE_SELECTOR_ES' | translate }}">
+                                        <span class="flag-icon flag-icon-ar"></span>
+                                    </a>
+                                </li>
+                                <li class="visible-xs">
+                                    <a href="javascript:;" data-ng-click="changeLanguage('us')" title="{{ 'LANGUAGE_SELECTOR_US' | translate }}">
+                                        <span class="flag-icon flag-icon-us"></span>
+                                    </a>
+                                </li>
+                                <li class="visible-xs">
+                                    <a href="javascript:;" data-ng-click="changeLanguage('ar')" title="{{ 'LANGUAGE_SELECTOR_ES' | translate }}">
                                         <span class="flag-icon flag-icon-ar"></span>
                                     </a>
                                 </li>
