@@ -87,8 +87,16 @@ blockquote {
         > li,
         > .active {
             > a {
-                font-size: @fontSM;
+                font-size: @fontXXS;
                 font-weight: @bold;
+                padding-left: 10px;
+                padding-right: 10px;
+
+                @media (min-width: @screen-md-min) {
+                    font-size: @fontSM;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
 
                 &:hover {
                     color: @white;
