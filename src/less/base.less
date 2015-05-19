@@ -241,13 +241,31 @@ blockquote {
 
     .footer-inner {
         padding: 78px 0;
+        font-size: 14px;
 
-        > ul {
+        ul {
             margin-top: 10px;
         }
 
         img {
             margin-right: 20px;
+        }
+
+        .mobile-social {
+            margin-top: 35px;
+        }
+
+        @media (max-width: 650px) {
+            .mobile-enabled {
+                display: block;
+                text-align: center;
+                float: none !important;
+                margin-bottom: 30px;
+
+                li {
+                    margin-bottom: 15px;
+                }
+            }
         }
     }
 }

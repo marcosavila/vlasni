@@ -104,18 +104,38 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-inner">
-                <span>
-                    <img src="assets/images/logo-small.png" alt="Vlasni">
-                    &copy; 2015 <a href ui-sref="home">Develance SRL</a>.
-                    {{ 'FOOTER_COPYRIGHT' | translate }}
-                </span>
-                <ul class="list-inline pull-right">
-                    <li>
-                        <a href="#">{{ 'FOOTER_NAV_PRIVACY' | translate }}</a>
-                    </li>
-                    <li>
-                        <a href="#">{{ 'FOOTER_NAV_TERMS' | translate }}</a>
-                    </li>
+                <div>
+                    <span class="mobile-enabled">
+                        <img src="assets/images/logo-small.png" alt="Vlasni">
+                        &copy; 2015 <a href ui-sref="home">Develance SRL</a>.
+                        <span class="hidden-xs hidden-sm">{{ 'FOOTER_COPYRIGHT' | translate }}</span>
+                    </span>
+                    <ul class="list-inline pull-right mobile-enabled">
+                        <li>
+                            <a href="#">{{ 'FOOTER_NAV_PRIVACY' | translate }}</a>
+                        </li>
+                        <li>
+                            <a href="#">{{ 'FOOTER_NAV_TERMS' | translate }}</a>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="https://www.facebook.com/pages/Vlasni/953639541322796" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="https://twitter.com/vlasni" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="#">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="mobile-social visible-xs align-center list-inline">
                     <li>
                         <a href="https://www.facebook.com/pages/Vlasni/953639541322796" target="_blank">
                             <i class="fa fa-facebook"></i>
