@@ -231,8 +231,13 @@
                 .step-list-number {
                     #common > .bubble;
                     position: absolute;
-                    left: -21px;
-                    top: -10px;
+                    left: 15px;
+                    top: 5px;
+
+                    @media (min-width: @screen-sm-min) {
+                        left: -21px;
+                        top: -10px;
+                    }
                 }
 
                 li {
