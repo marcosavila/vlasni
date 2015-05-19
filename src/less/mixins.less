@@ -387,21 +387,21 @@
             }
             
             ul {
-            	color: @grey;
+                color: @grey;
                 font-size: @fontMDS;
                 text-align: left;
                 padding-left: 95px;
                 list-style-type: none;
-    			margin: 0px;
-    			height: 150px;
+                margin: 0px;
+                height: 150px;
             }
             
             ul li {
-			    background-image: url("images/Tick.png");
-			    background-repeat: no-repeat;
-			    background-position: 0px center; 
-			    padding-left: 20px; 
-			}
+                background-image: url("images/Tick.png");
+                background-repeat: no-repeat;
+                background-position: 0px center;
+                padding-left: 20px;
+            }
 
             .btn {
                 min-width: 200px;
@@ -416,46 +416,74 @@
             overflow: hidden;
 
             &:last-child {
-                .middle-list-colored {
-                    padding-bottom: 95px;
+                @media (min-width: @screen-md-min) {
+                    .middle-list-colored {
+                        padding-bottom: 95px;
+                    }
                 }
 
                 .middle-list-clear {
-                    padding-bottom: 140px;
+                    padding-bottom: 40px;
+
+                    @media (min-width: @screen-md-min) {
+                        padding-bottom: 140px;
+                    }
                 }
             }
         }
 
         .middle-list-colored,
         .middle-list-clear {
-            width: 50%;
-            position: relative;
-            padding-top: 95px;
-            padding-bottom: 45px;
-            min-height: 345px;
+            width: 100%;
+
+            @media (min-width: @screen-md-min) {
+                width: 50%;
+                position: relative;
+                padding-top: 95px;
+                padding-bottom: 45px;
+                min-height: 360px;
+            }
         }
 
         .middle-list-colored {
-            background: @lightestGrey;
-            padding-right: 40px;
+            @media (min-width: @screen-md-min) {
+                background: @lightestGrey;
+                padding-right: 40px;
+            }
 
             img {
-                margin-top: 75px;
+                margin: 115px auto 0;
+                padding: 0 20px;
+
+                @media (min-width: @screen-md-min) {
+                    float: right;
+                    margin-top: 75px;
+                    padding: 0;
+                }
             }
         }
 
         .middle-list-clear {
-            position: absolute;
-            margin-left: 50%;
-            top: 0;
-            padding-left: 65px;
+            padding-left: 20%;
             padding-right: 20%;
-            box-shadow: -1px 0 0 0 @lightGrey;
+
+            @media (min-width: @screen-md-min) {
+                position: absolute;
+                margin-left: 50%;
+                top: 0;
+                padding-left: 65px;
+                padding-right: 20%;
+                box-shadow: -1px 0 0 0 @lightGrey;
+            }
 
             h2,
             h3,
             p {
-                text-align: left;
+                text-align: center;
+
+                @media (min-width: @screen-md-min) {
+                    text-align: left;
+                }
             }
 
             h2,
@@ -476,7 +504,18 @@
             left: 50%;
             margin-left: -21px;
             position: absolute;
-            top: 78px;
+            top: 45px;
+
+            @media (min-width: @screen-md-min) {
+                top: 78px;
+            }
+        }
+
+        .rounded-divider {
+            @media (min-width: @screen-md-min) {
+                #dividers > .left-aligned;
+                #dividers > .no-top-border;
+            }
         }
 
         .block-item {

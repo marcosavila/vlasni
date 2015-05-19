@@ -279,7 +279,10 @@ blockquote {
 
     &.section-compact {
         #vertical-sections > .no-padding;
-        border-bottom: 1px solid @lightGrey;
+
+        @media (min-width: @screen-md-min) {
+            border-bottom: 1px solid @lightGrey;
+        }
     }
 
     &.clear-section {
