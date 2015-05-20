@@ -1,3 +1,4 @@
+/*jshint smarttabs:true */
 angular.module( 'vlasni', [
   'templates-app',
   'templates-common',
@@ -30,7 +31,7 @@ angular.module( 'vlasni', [
 .run( function run () {
 })
 
-.controller( 'AppCtrl', function AppCtrl ( $scope, $location, $translate ) {
+.controller( 'AppCtrl', function AppCtrl ( $scope, $modal, $location, $translate ) {
   $scope.activeLang = $translate.preferredLanguage();
 
   $scope.changeLanguage = function (langKey) {
@@ -45,6 +46,30 @@ angular.module( 'vlasni', [
 
     $scope.state_name = toState.name;
   });
+
+  $scope.openTermsModal = function() {
+	  var modalInstance = $modal.open({
+		  animation: true,
+		  templateUrl: 'termsModalContent.html',
+		  controller: 'ModalInstanceCtrl',
+		  size: 'lg'
+	  });
+  };
+	  
+  $scope.openPolicyModal = function() {
+	  var modalInstance = $modal.open({
+		  animation: true,
+		  templateUrl: 'policyModalContent.html',
+		  controller: 'ModalInstanceCtrl',
+		  size: 'lg'
+	  });
+
+  };
+}).controller('ModalInstanceCtrl', function ($scope, $modalInstance) {
+	$scope.ok = function () {
+		$modalInstance.close();
+	};
+
 })
 
 ;

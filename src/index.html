@@ -112,10 +112,10 @@
                     </span>
                     <ul class="list-inline pull-right mobile-enabled">
                         <li>
-                            <a href="#">{{ 'FOOTER_NAV_PRIVACY' | translate }}</a>
+                            <a href="" ng-click="openPolicyModal()">{{ 'FOOTER_NAV_PRIVACY' | translate }}</a>
                         </li>
                         <li>
-                            <a href="#">{{ 'FOOTER_NAV_TERMS' | translate }}</a>
+                            <a href="" ng-click="openTermsModal()">{{ 'FOOTER_NAV_TERMS' | translate }}</a>
                         </li>
                         <li class="hidden-xs">
                             <a href="https://www.facebook.com/pages/Vlasni/953639541322796" target="_blank">
@@ -133,6 +133,26 @@
                             </a>
                         </li>
                     </ul>
+                    <script type="text/ng-template" id="termsModalContent.html">
+        				<div class="modal-header">
+            				<h3 class="modal-title">{{ 'TERMS_CONDITIONS_TITLE' | translate }}</h3>
+        				</div>
+        				<div class="modal-body" translate="TERMS_CONDITIONS_BODY" translate-compile>
+        				</div>
+        				<div class="modal-footer">
+	            			<button class="btn btn-primary" ng-click="ok()">{{ 'CLOSE' | translate }}</button>
+        				</div>
+    				</script>
+    				<script type="text/ng-template" id="policyModalContent.html">
+        				<div class="modal-header">
+            				<h3 class="modal-title">{{ 'PRIVACY_POLICY_TITLE' | translate }}</h3>
+        				</div>
+        				<div class="modal-body" translate="PRIVACY_POLICY_BODY" translate-compile>
+        				</div>
+        				<div class="modal-footer">
+	            			<button class="btn btn-primary" ng-click="ok()">{{ 'CLOSE' | translate }}</button>
+        				</div>
+    				</script>
                 </div>
 
                 <ul class="mobile-social visible-xs align-center list-inline">
