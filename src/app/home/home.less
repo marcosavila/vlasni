@@ -55,12 +55,16 @@
 
 .how-it-works {
     background-color: @orange;
-    background-image: url("images/square-bg.jpg");
-    background-position: 100% 0;
+    background-position: right top;
     background-repeat: no-repeat;
-    background-size: 50% auto;
-    padding-bottom: 90px;
+    background-size: 50% 100%;
     padding-top: 65px;
+
+    @media (min-width: @screen-md-min) {
+        background-image: url("images/square-bg.jpg");
+        padding-bottom: 90px;
+    }
+
 
     h2,
     h3,
@@ -105,8 +109,35 @@
         }
     }
 
+    .middle-block-image-container {
+        background-image: url("images/square-bg.jpg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: 100vh auto;
+        padding-top: 65px;
+        padding-bottom: 65px;
+
+        @media (min-width: @screen-sm-min) {
+            background-size: 100% auto;
+        }
+
+         @media (min-width: @screen-md-min) {
+            background: transparent;
+            padding-top: 0;
+            padding-bottom: 0;
+         }
+    }
+
     .middle-block {
-        padding-right: 65px;
+        padding-bottom: 65px;
+        padding-left: 100px;
+        padding-right: 100px;
+
+        @media (min-width: @screen-md-min) {
+            padding-left: 95px;
+            padding-right: 65px;
+            padding-bottom: 0;
+        }
 
         a {
             margin-top: 50px;
@@ -114,7 +145,15 @@
     }
 
     .middle-block-image {
-        padding-left: 65px;
+        padding-top: 40px;
+        padding-left: 100px;
+        padding-right: 100px;
+
+        @media (min-width: @screen-md-min) {
+            padding-left: 65px;
+            padding-right: 95px;
+            padding-top: 0;
+        }
     }
 }
 
