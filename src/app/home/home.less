@@ -167,6 +167,12 @@
         margin-top: 45px;
         margin-bottom: 45px;
     }
+
+    .vlasni-partners {
+        > li {
+            margin-bottom: 30px;
+        }
+    }
 }
 
 .vlasni-partners {
@@ -185,14 +191,22 @@
     }
 
     .external-block {
-        height: 180px;
+        height: 200px;
         border: 1px solid @lightGrey;
         border-radius: @baseRadius;
 
+        @media (min-width: @screen-md-min) {
+            height: 180px;
+        }
+
         > div {
-            margin-top: -25px;
-            padding-top: 50%;
             width: 100%;
+            padding-top: 100px;
+
+            @media (min-width: @screen-md-min) {
+                margin-top: -25px;
+                padding-top: 50%;
+            }
         }
 
         &.external-left {
@@ -207,15 +221,21 @@
     .internal-block {
         background: @lightestGrey;
         height: 200px;
-        margin-top: -10px;
         border: 1px solid @lightGrey;
         border-radius: @baseRadius;
         text-align: center;
 
+        @media (min-width: @screen-md-min) {
+            margin-top: -10px;
+        }
+
         img {
-            margin: -105px auto;
-            padding-top: 50%;
-            text-align: center;
+            padding-top: 60px;
+
+            @media (min-width: @screen-md-min) {
+                margin: -105px auto;
+                padding-top: 50%;
+            }
         }
     }
 }
