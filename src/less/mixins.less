@@ -591,25 +591,27 @@
                     padding-left: 120px;
                     padding-right: 20%;
 
-                    &.light-blue {
-                        .block-color-pushed(@blue);
-                    }
+                    @media (min-width: @screen-md-min) {
+                        &.light-blue {
+                            .block-color-pushed(@blue);
+                        }
 
-                    &.opaque-blue {
-                        .block-color-pushed(@opaqueBlue);
-                    }
+                        &.opaque-blue {
+                            .block-color-pushed(@opaqueBlue);
+                        }
 
-                    &.strong-blue {
-                        .block-color-pushed(@strongBlue);
-                    }
+                        &.strong-blue {
+                            .block-color-pushed(@strongBlue);
+                        }
 
-                    &.orange {
-                        .block-color-pushed(@orange);
-                    }
+                        &.orange {
+                            .block-color-pushed(@orange);
+                        }
 
-                    &::after {
-                        #triangle > .base-generator;
-                        #triangle > .left-out;
+                        &::after {
+                            #triangle > .base-generator;
+                            #triangle > .left-out;
+                        }
                     }
                 }
 
@@ -617,25 +619,27 @@
                     padding-right: 120px;
                     padding-left: 20%;
 
-                    &.light-blue {
-                        .block-color-static(@blue);
-                    }
+                    @media (min-width: @screen-md-min) {
+                        &.light-blue {
+                            .block-color-static(@blue);
+                        }
 
-                    &.opaque-blue {
-                        .block-color-static(@opaqueBlue);
-                    }
+                        &.opaque-blue {
+                            .block-color-static(@opaqueBlue);
+                        }
 
-                    &.strong-blue {
-                        .block-color-static(@strongBlue);
-                    }
+                        &.strong-blue {
+                            .block-color-static(@strongBlue);
+                        }
 
-                    &.orange {
-                        .block-color-static(@orange);
-                    }
+                        &.orange {
+                            .block-color-static(@orange);
+                        }
 
-                    &::after {
-                        #triangle > .base-generator;
-                        #triangle > .right-out;
+                        &::after {
+                            #triangle > .base-generator;
+                            #triangle > .right-out;
+                        }
                     }
                 }
             }
