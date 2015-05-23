@@ -327,19 +327,25 @@
     .pricing-plan-list(@bg: @lightestGrey, @borderColor: @lightGrey) {
         .no-margin();
 
-        > li {
+        .plan-list-item {
             border: 1px solid @borderColor;
             background: @bg;
             padding: 30px 0 0;
+            border-radius: @baseRadius;
+            margin-bottom: 30px;
 
-            &:first-child {
-                border-radius: @baseRadius 0 0 0;
-                border-right: 0;
-            }
+            @media (min-width: @screen-md-min) {
+                margin-bottom: 0;
 
-            &:last-child {
-                border-radius: 0 @baseRadius 0 0;
-                border-left: 0;
+                &:first-child {
+                    border-radius: @baseRadius 0 0 0;
+                    border-right: 0;
+                }
+
+                &:last-child {
+                    border-radius: 0 @baseRadius 0 0;
+                    border-left: 0;
+                }
             }
 
             h2,
@@ -399,18 +405,23 @@
             ul {
                 color: @grey;
                 font-size: @fontMDS;
-                text-align: left;
-                padding-left: 95px;
+                text-align: center;
+                padding: 0 25px;
                 list-style-type: none;
                 margin: 0px;
                 height: 150px;
-            }
-            
-            ul li {
-                background-image: url("images/Tick.png");
-                background-repeat: no-repeat;
-                background-position: 0px center;
-                padding-left: 20px;
+
+                @media (min-width: @screen-md-min) {
+                    padding: 0 5px 0 95px;
+                    text-align: left;
+                }
+
+                li {
+                    background-image: url("images/Tick.png");
+                    background-repeat: no-repeat;
+                    background-position: 0px center;
+                    padding-left: 20px;
+                }
             }
 
             .btn {
