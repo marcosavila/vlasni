@@ -339,12 +339,10 @@
 
                 &:first-child {
                     border-radius: @baseRadius 0 0 0;
-                    border-right: 0;
                 }
 
                 &:last-child {
                     border-radius: 0 @baseRadius 0 0;
-                    border-left: 0;
                 }
             }
 
@@ -408,19 +406,19 @@
                 text-align: center;
                 padding: 0 25px;
                 list-style-type: none;
-                margin: 0px;
-                height: 150px;
+                margin: 0 0 15px 0;
+                
 
                 @media (min-width: @screen-md-min) {
-                    padding: 0 5px 0 95px;
+                    padding: 0 5px 0 55px;
                     text-align: left;
+                    margin: 0px;
+                    min-height: 180px;
                 }
 
-                li {
-                    background-image: url("images/Tick.png");
-                    background-repeat: no-repeat;
-                    background-position: 0px center;
-                    padding-left: 20px;
+                i {
+                    margin-right: 5px;
+                    color: #20A810;
                 }
             }
 
