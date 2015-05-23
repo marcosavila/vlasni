@@ -48,27 +48,29 @@ angular.module( 'vlasni', [
   });
 
   $scope.openTermsModal = function() {
-	  var modalInstance = $modal.open({
-		  animation: true,
-		  templateUrl: 'termsModalContent.html',
-		  controller: 'ModalInstanceCtrl',
-		  size: 'lg'
-	  });
+    var modalInstance = $modal.open({
+      animation: true,
+      templateUrl: 'termsModalContent.html',
+      controller: 'ModalInstanceCtrl',
+      size: 'lg'
+    });
   };
-	  
-  $scope.openPolicyModal = function() {
-	  var modalInstance = $modal.open({
-		  animation: true,
-		  templateUrl: 'policyModalContent.html',
-		  controller: 'ModalInstanceCtrl',
-		  size: 'lg'
-	  });
 
+  $scope.openPolicyModal = function() {
+    var modalInstance = $modal.open({
+      animation: true,
+      templateUrl: 'policyModalContent.html',
+      controller: 'ModalInstanceCtrl',
+      size: 'lg'
+    });
   };
-}).controller('ModalInstanceCtrl', function ($scope, $modalInstance) {
-	$scope.ok = function () {
-		$modalInstance.close();
-	};
+
+})
+
+.controller('ModalInstanceCtrl', function ($scope, $modalInstance) {
+  $scope.ok = function () {
+    $modalInstance.close();
+  };
 
 })
 
