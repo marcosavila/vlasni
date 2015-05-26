@@ -9,7 +9,8 @@
     "angular-ui-router": "~0.2",
     "angular-translate": "~2.6.1",
     "angular-translate-loader-static-files": "~2.6.1",
-    "flag-icon-css": "~0.7.1"
+    "flag-icon-css": "~0.7.1",
+	"angular-ladda": "~0.2.2"
   },
   "dependencies": {}
 }

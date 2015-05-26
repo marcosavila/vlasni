@@ -11,35 +11,45 @@
 <div class="vlasni-section">
     <div class="container">
         <div class="row">
-            <form class="col-md-12">
+        	<form name="form" role="form" class="col-md-12" ng-submit="sendContact()">
                 <div class="simple-form">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>{{ 'CONTACT_NAME' | translate }}<span>*</span>:</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="name" id="name" ng-model="name" required>
+                                <span ng-show="form.name.$dirty && form.name.$error.required"
+									class="help-block">{{ 'NAME_REQUIRED' | translate }}</span>
                             </div>
 
                             <div class="form-group">
                                 <label>{{ 'CONTACT_EMAIL' | translate }}<span>*</span>:</label>
-                                <input type="email" class="form-control">
+                                <input type="email" class="form-control" name="email" id="email" ng-model="email" required>
+                                <span ng-show="form.email.$dirty && form.email.$error.email"
+									class="help-block">{{ 'EMAIL_INVALID' | translate }}</span>
                             </div>
 
                             <div class="form-group">
                                 <label>{{ 'CONTACT_PHONE' | translate }}:</label>
-                                <input type="number" class="form-control">
+                                <input type="text" class="form-control" name="phone" id="phone" ng-model="phone" ng-pattern="/^(0|[1-9][0-9]*)$/">
+                                <span ng-show="form.phone.$dirty && form.phone.$error.pattern"
+									class="help-block">{{ 'NUMBER_INVALID' | translate }}</span>
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>{{ 'CONTACT_COMMENT' | translate }}<span>*</span>:</label>
-                                <textarea  data-ng-minlength="20" class="form-control" rows="3"></textarea>
+                                <textarea class="form-control" rows="3" name="comment" id="comment" ng-model="comment" required></textarea>
+                                <span ng-show="form.comment.$dirty && form.comment.$error.required"
+									class="help-block">{{ 'COMMENT_REQUIRED' | translate }}</span>
                             </div>
                         </div>
 
                         <div class="col-md-12 text-center">
-                            <button type="submit" class="btn btn-primary btn-large">{{ 'CONTACT_SEND' | translate }}</button>
+                        	<div ng-show="error" class="alert alert-danger">{{ "CONTACT_ERROR" | translate}}</div>
+            				<div ng-show="success" class="alert alert-success">{{ "CONTACT_SUCCESS" | translate}}</div>
+                            <button type="submit" ladda="loginLoading" ng-disabled="form.$invalid" class="btn btn-primary btn-large">{{ 'CONTACT_SEND' | translate }}</button>
                         </div>
                     </div>
                 </div>

@@ -67,9 +67,13 @@ module.exports = {
       'vendor/angular-ui-router/release/angular-ui-router.js',
       'vendor/angular-ui-utils/modules/route/route.js',
       'vendor/angular-translate/angular-translate.min.js',
-      'vendor/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js'
+      'vendor/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js',
+      'vendor/ladda/dist/spin.min.js',
+      'vendor/ladda/dist/ladda.min.js',
+	  'vendor/angular-ladda/dist/angular-ladda.min.js'
     ],
     css: [
+      'vendor/ladda/dist/ladda-themeless.min.css'
     ],
     assets: [
     ],
