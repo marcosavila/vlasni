@@ -42,6 +42,11 @@ angular.module( 'vlasni.contact', [
 			}).success(function(response){
 				if (response.status === "OK"){
 					$scope.success = true;
+					$scope.name = '';
+					$scope.email = '';
+					$scope.phone = '';
+					$scope.comment = '';
+					$scope.form.$setPristine();
 				} else {
 					$scope.error = true;
 				}
