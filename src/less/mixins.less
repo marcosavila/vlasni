@@ -332,23 +332,33 @@
     .pricing-plan-list(@bg: @lightestGrey, @borderColor: @lightGrey) {
         .no-margin();
 
-        .plan-list-item {
-            border: 1px solid @borderColor;
-            background: @bg;
-            padding: 30px 0 0;
-            border-radius: @baseRadius;
-            margin-bottom: 30px;
-
-            @media (min-width: @screen-md-min) {
+        @media (min-width: @screen-md-min) {
+            > li {
+                border: 1px solid @borderColor;
+                background: @bg;
+                padding: 30px 0 0;
+                border-radius: @baseRadius;
                 margin-bottom: 0;
 
                 &:first-child {
                     border-radius: @baseRadius 0 0 0;
+                    border-right: 0;
                 }
 
                 &:last-child {
                     border-radius: 0 @baseRadius 0 0;
+                    border-left: 0;
                 }
+            }
+        }
+
+        .plan-list-item {
+            @media (max-width: @screen-sm-max) {
+                border: 1px solid @borderColor;
+                background: @bg;
+                padding: 30px 0 0;
+                border-radius: @baseRadius;
+                margin-bottom: 30px;
             }
 
             h2,
@@ -603,6 +613,10 @@
 
                 @media (min-width: @screen-md-min) {
                     background-size: auto 100%;
+                }
+
+                @media (min-width: @screen-lg-min) {
+                    background-size: 100% 100%;
                 }
             }
 

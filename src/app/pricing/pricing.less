@@ -8,14 +8,19 @@
 
         @media (min-width: @screen-md-min) {
             border-width: 0 1px 1px;
+            margin-left: -15px;
+            margin-right: -15px;
         }
 
         .btn {
             padding: 0 10px;
 
             &:first-child {
-                border-right: 1px solid @greySecondary;
                 margin-right: 0;
+
+                @media (min-width: @screen-sm-min) {
+                    border-right: 1px solid @greySecondary;
+                }
             }
 
             &:last-child {

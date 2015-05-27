@@ -9,8 +9,22 @@
     }
 
     .btn {
+        float: none;
+        display: block;
+
+        @media (min-width: @screen-sm-min) {
+            float: left;
+            display: inline-block;
+        }
+
         &:first-child {
-            margin-right: 30px;
+            margin-right: 0;
+            margin-bottom: 25px;
+
+            @media (min-width: @screen-sm-min) {
+                margin-right: 30px;
+                margin-bottom: 0;
+            }
         }
     }
 }
