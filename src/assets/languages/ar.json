@@ -201,5 +201,6 @@
     "NAME_REQUIRED": "Ingrese su nombre",
     "EMAIL_INVALID": "Ingrese un email válido",
     "NUMBER_INVALID": "Ingrese un número telefónico",
-    "COMMENT_REQUIRED": "Ingrese un comentario"
+    "COMMENT_REQUIRED": "Ingrese un comentario",
+    "COMMENT_MIN_LENGTH": "Ingrese un comentario de al menos 20 caracteres"
 }

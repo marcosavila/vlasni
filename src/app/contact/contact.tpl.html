@@ -40,9 +40,12 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>{{ 'CONTACT_COMMENT' | translate }}<span>*</span>:</label>
-                                <textarea class="form-control" rows="3" name="comment" id="comment" ng-model="comment" required></textarea>
+                                <textarea class="form-control" rows="3" name="comment" id="comment" ng-model="comment" ng-minlength="20" required></textarea>
                                 <span ng-show="form.comment.$dirty && form.comment.$error.required"
 									class="help-block">{{ 'COMMENT_REQUIRED' | translate }}</span>
+								<span
+									ng-show="form.comment.$dirty && form.comment.$error.minlength"
+									class="help-block">{{ 'COMMENT_MIN_LENGTH' | translate }}</span>
                             </div>
                         </div>
 

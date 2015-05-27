@@ -201,5 +201,6 @@
     "NAME_REQUIRED": "Enter a name",
     "EMAIL_INVALID": "Enter a valid email",
     "NUMBER_INVALID": "Enter a phone number",
-    "COMMENT_REQUIRED": "Enter a comment"
+    "COMMENT_REQUIRED": "Enter a comment",
+    "COMMENT_MIN_LENGTH": "Enter a comment with at least 20 characters"
 }
