@@ -15,6 +15,13 @@
     .jumbotron-btn-container {
         .btn {
             min-width: 200px;
+            float: none;
+            display: block;
+
+            @media (min-width: @screen-sm-min) {
+                float: left;
+                display: inline-block;
+            }
         }
     }
 }
@@ -113,7 +120,7 @@
         background-image: url("images/square-bg.jpg");
         background-position: center top;
         background-repeat: no-repeat;
-        background-size: 100vh auto;
+        background-size: 100% 100%;
         padding-top: 65px;
         padding-bottom: 65px;
 
@@ -130,12 +137,15 @@
 
     .middle-block {
         padding-bottom: 65px;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
 
-        @media (min-width: @screen-md-min) {
+        @media (min-width: @screen-sm-min) {
             padding-left: 95px;
             padding-right: 65px;
+        }
+
+        @media (min-width: @screen-md-min) {
             padding-bottom: 0;
         }
 
@@ -146,13 +156,16 @@
 
     .middle-block-image {
         padding-top: 40px;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
 
-        @media (min-width: @screen-md-min) {
+        @media (min-width: @screen-sm-min) {
             padding-left: 65px;
             padding-right: 95px;
-            padding-top: 0;
+        }
+
+        @media (min-width: @screen-md-min) {
+            padding-bottom: 0;
         }
     }
 }
@@ -177,6 +190,13 @@
 
 .vlasni-partners {
     margin-top: 75px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media (min-width: @screen-sm-min) {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     .legend {
         font-weight: @bold;
@@ -231,6 +251,13 @@
 
         img {
             padding-top: 60px;
+            width: 100%;
+            max-height: 160px;
+
+            @media (min-width: @screen-sm-min) {
+                width: auto;
+                max-height: inherit;
+            }
 
             @media (min-width: @screen-md-min) {
                 margin: -105px auto;

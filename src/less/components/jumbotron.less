@@ -43,7 +43,15 @@
         &.btn-group {
             .btn {
                 &:first-child {
-                    margin-right: 30px;
+                    margin-right: 0;
+                    margin-bottom: 25px;
+                }
+
+                @media (min-width: @screen-sm-min) {
+                    &:first-child {
+                        margin-right: 30px;
+                        margin-bottom: 0;
+                    }
                 }
             }
         }
