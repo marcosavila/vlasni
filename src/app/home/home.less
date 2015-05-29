@@ -194,9 +194,17 @@
 
     .legend {
         font-weight: @bold;
-        font-size: @fontSM;
+        font-size: 9px;
         color: @boldBlue;
         text-transform: uppercase;
+
+        @media (min-width: @screen-sm-min) {
+            font-size: @fontSM;
+
+            i {
+                font-size: @fontXXS;
+            }
+        }
 
         i {
             color: @orange;
@@ -205,9 +213,13 @@
     }
 
     .external-block {
-        height: 200px;
+        height: 165px;
         border: 1px solid @lightGrey;
         border-radius: @baseRadius;
+
+        @media (min-width: @screen-sm-min) {
+            height: 200px;
+        }
 
         @media (min-width: @screen-md-min) {
             height: 180px;
@@ -215,7 +227,11 @@
 
         > div {
             width: 100%;
-            padding-top: 100px;
+            padding-top: 75px;
+
+            @media (min-width: @screen-sm-min) {
+                padding-top: 100px;
+            }
 
             @media (min-width: @screen-md-min) {
                 margin-top: -25px;
@@ -234,23 +250,29 @@
 
     .internal-block {
         background: @lightestGrey;
-        height: 200px;
+        height: 165px;
         border: 1px solid @lightGrey;
         border-radius: @baseRadius;
         text-align: center;
 
+        @media (min-width: @screen-sm-min) {
+            height: 200px;
+        }
+
         @media (min-width: @screen-md-min) {
             margin-top: -10px;
+            height: 200px;
         }
 
         img {
-            padding-top: 60px;
+            padding-top: 50px;
             width: 100%;
             max-height: 160px;
 
             @media (min-width: @screen-sm-min) {
                 width: auto;
                 max-height: inherit;
+                padding-top: 60px;
             }
 
             @media (min-width: @screen-md-min) {
