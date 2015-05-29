@@ -288,10 +288,14 @@
             background: @lightestGrey;
             border-right: 1px solid @lightGrey;
             display: table;
-            height: 200px;
+            height: 265px;
             line-height: 200px;
             text-align: center;
             width: 115px;
+
+            @media (min-width: 359px) {
+                height: 200px;
+            }
 
             @media (min-width: 615px) {
                 height: 118px;
