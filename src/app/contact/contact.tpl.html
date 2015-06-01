@@ -3,7 +3,7 @@
         <div class="container">
             <h1>{{ 'CONTACT_TITLE' | translate }}</h1>
 
-            <p class="lead">{{ 'CONTACT_TEXT' | translate }}</p>
+            <p class="lead">{{ 'CONTACT_TEXT' | translate }} <span class="contact-mailto" ng-bind-html="snippet | linky"></span>.</p>
         </div>
     </div>
 </div>

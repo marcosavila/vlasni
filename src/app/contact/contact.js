@@ -1,7 +1,8 @@
 /*jshint smarttabs:true */
 angular.module( 'vlasni.contact', [
   'ui.router',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'ngSanitize'
 ])
 
 .config(function config( $stateProvider ) {
@@ -54,6 +55,8 @@ angular.module( 'vlasni.contact', [
             });
         });
     };
+    
+    $scope.snippet = 'mailto:info@vlasni.com';
 })
 
 ;

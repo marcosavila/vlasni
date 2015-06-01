@@ -70,7 +70,8 @@ module.exports = {
       'vendor/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js',
       'vendor/ladda/dist/spin.min.js',
       'vendor/ladda/dist/ladda.min.js',
-      'vendor/angular-ladda/dist/angular-ladda.min.js'
+      'vendor/angular-ladda/dist/angular-ladda.min.js',
+      'vendor/angular-sanitize/angular-sanitize.js'
     ],
     css: [
       'vendor/ladda/dist/ladda-themeless.min.css'
