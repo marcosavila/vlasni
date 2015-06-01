@@ -8,6 +8,33 @@
     </div>
 </div>
 
+<div ng-init="otherBasicPlans = [
+  {packagePrice:'609,38', deliveries:'5.000', singlePrice:'0,122'},
+  {packagePrice:'1.188,28', deliveries:'10.000', singlePrice:'0,119'},
+  {packagePrice:'2.896,44', deliveries:'25.000', singlePrice:'0,116'},
+  {packagePrice:'5.648,05', deliveries:'50.000', singlePrice:'0,113'},
+  {packagePrice:'11.013,70', deliveries:'100.000', singlePrice:'0,110'},
+  {packagePrice:'21.476,71', deliveries:'200.000', singlePrice:'0,107'}
+]">
+
+<div ng-init="otherAdvancedPlans = [
+  {packagePrice:'1.218,75', deliveries:'5.000', singlePrice:'0,244'},
+  {packagePrice:'2.376,56', deliveries:'10.000', singlePrice:'0,238'},
+  {packagePrice:'5.792,87', deliveries:'25.000', singlePrice:'0,232'},
+  {packagePrice:'11.296,10', deliveries:'50.000', singlePrice:'0,226'},
+  {packagePrice:'22.027,39', deliveries:'100.000', singlePrice:'0,220'},
+  {packagePrice:'42.953,42', deliveries:'200.000', singlePrice:'0,215'}
+]">
+
+<div ng-init="otherPremiumPlans = [
+  {packagePrice:'2.437,50', deliveries:'5.000', singlePrice:'0,488'},
+  {packagePrice:'4.753,13', deliveries:'10.000', singlePrice:'0,475'},
+  {packagePrice:'11.585,74', deliveries:'25.000', singlePrice:'0,463'},
+  {packagePrice:'22.592,20', deliveries:'50.000', singlePrice:'0,452'},
+  {packagePrice:'44.054,78', deliveries:'100.000', singlePrice:'0,441'},
+  {packagePrice:'85.906,83', deliveries:'200.000', singlePrice:'0,430'}
+]">
+
 <div class="container">
     <div class="vlasni-section clear-section">
         <h2>{{ 'PRICING_CAMPAIGNS_TITLE' | translate }}</h2>
@@ -21,7 +48,7 @@
                     <div class="rounded-divider small-margin"></div>
 
                     <p class="plan-anual-amount">
-                        <span><i>USD </i>3.125</span>
+                        <span><i>USD </i>125</span>
                         <br/>
                         {{ 'PRICING_PLAN_AMOUNT_PERIOD_ANUAL' | translate }}
                     </p>
@@ -37,10 +64,20 @@
                                 {{ 'PRICING_PLAN_FEATURE_2' | translate }}
                             </li>
                         </ul>
-                        <p><span>25.000 </span>{{ 'PRICING_PLAN_DETAIL_TEXT_DELIVERABLES' | translate }}</p>
+                        <p><span>1.000 </span>{{ 'PRICING_PLAN_DETAIL_TEXT_DELIVERABLES' | translate }}</p>
                         <p><span>USD 0,125 </span>/ {{ 'PRICING_PLAN_DETAIL_TEXT_DELIVERABLES_UNIT' | translate }}</p>
 
-                        <a class="btn btn-primary btn-large ng-binding" href="#">{{ 'PRICING_PLAN_CHOOSE' | translate }}</a>
+                        <a class="btn btn-primary btn-large ng-binding" href ui-sref="contact">{{ 'PRICING_PLAN_CHOOSE' | translate }}</a>
+                    </div>
+                    <div class="other-plans-details" ng-show="showOtherPlans" ng-repeat="basicPlan in otherBasicPlans">
+                    	<p class="plan-anual-amount">
+	                        <span><i>USD </i>{{basicPlan.packagePrice}}</span>
+	                        <br/>
+	                        {{ 'PRICING_PLAN_AMOUNT_PERIOD_ANUAL' | translate }}
+	                    </p>
+	                    <p class="other-plans-deliverables"><span>{{basicPlan.deliveries}} </span>{{ 'PRICING_PLAN_DETAIL_TEXT_DELIVERABLES' | translate }}</p>
+                        <p><span>USD {{basicPlan.singlePrice}} </span>/ {{ 'PRICING_PLAN_DETAIL_TEXT_DELIVERABLES_UNIT' | translate }}</p>
+                        <a class="btn btn-primary btn-large ng-binding" href ui-sref="contact">{{ 'PRICING_PLAN_CHOOSE' | translate }}</a>
                     </div>
                 </div>
             </li>
@@ -52,7 +89,7 @@
                     <div class="rounded-divider small-margin"></div>
 
                     <p class="plan-anual-amount">
-                        <span><i>USD </i>6.250</span>
+                        <span><i>USD </i>250</span>
                         <br/>
                         {{ 'PRICING_PLAN_AMOUNT_PERIOD_ANUAL' | translate }}
                     </p>
@@ -76,10 +113,20 @@
                                 {{ 'PRICING_PLAN_FEATURE_4' | translate }}
                             </li>
                         </ul>
-                        <p><span>25.000 </span>{{ 'PRICING_PLAN_DETAIL_TEXT_DELIVERABLES' | translate }}</p>
+                        <p><span>1.000 </span>{{ 'PRICING_PLAN_DETAIL_TEXT_DELIVERABLES' | translate }}</p>
                         <p><span>USD 0,25 </span>/ {{ 'PRICING_PLAN_DETAIL_TEXT_DELIVERABLES_UNIT' | translate }}</p>
 
-                        <a class="btn btn-primary btn-large ng-binding" href="#">{{ 'PRICING_PLAN_CHOOSE' | translate }}</a>
+                        <a class="btn btn-primary btn-large ng-binding" href ui-sref="contact">{{ 'PRICING_PLAN_CHOOSE' | translate }}</a>
+                    </div>
+                    <div class="other-plans-details" ng-show="showOtherPlans" ng-repeat="advancedPlan in otherAdvancedPlans">
+                    	<p class="plan-anual-amount">
+	                        <span><i>USD </i>{{advancedPlan.packagePrice}}</span>
+	                        <br/>
+	                        {{ 'PRICING_PLAN_AMOUNT_PERIOD_ANUAL' | translate }}
+	                    </p>
+	                    <p class="other-plans-deliverables"><span>{{advancedPlan.deliveries}} </span>{{ 'PRICING_PLAN_DETAIL_TEXT_DELIVERABLES' | translate }}</p>
+                        <p><span>USD {{advancedPlan.singlePrice}} </span>/ {{ 'PRICING_PLAN_DETAIL_TEXT_DELIVERABLES_UNIT' | translate }}</p>
+                        <a class="btn btn-primary btn-large ng-binding" href ui-sref="contact">{{ 'PRICING_PLAN_CHOOSE' | translate }}</a>
                     </div>
                 </div>
             </li>
@@ -91,7 +138,7 @@
                     <div class="rounded-divider small-margin"></div>
 
                     <p class="plan-anual-amount">
-                        <span><i>USD </i>12.500</span>
+                        <span><i>USD </i>500</span>
                         <br/>
                         {{ 'PRICING_PLAN_AMOUNT_PERIOD_ANUAL' | translate }}
                     </p>
@@ -123,10 +170,20 @@
                                 {{ 'PRICING_PLAN_FEATURE_6' | translate }}
                             </li>
                         </ul>
-                        <p><span>25.000 </span>{{ 'PRICING_PLAN_DETAIL_TEXT_DELIVERABLES' | translate }}</p>
+                        <p><span>1.000 </span>{{ 'PRICING_PLAN_DETAIL_TEXT_DELIVERABLES' | translate }}</p>
                         <p><span>USD 0,50 </span>/ {{ 'PRICING_PLAN_DETAIL_TEXT_DELIVERABLES_UNIT' | translate }}</p>
 
-                        <a class="btn btn-primary btn-large ng-binding" href="#">{{ 'PRICING_PLAN_CHOOSE' | translate }}</a>
+                        <a class="btn btn-primary btn-large ng-binding" href ui-sref="contact">{{ 'PRICING_PLAN_CHOOSE' | translate }}</a>
+                    </div>
+                    <div class="other-plans-details" ng-show="showOtherPlans" ng-repeat="premiumPlan in otherPremiumPlans">
+                    	<p class="plan-anual-amount">
+	                        <span><i>USD </i>{{premiumPlan.packagePrice}}</span>
+	                        <br/>
+	                        {{ 'PRICING_PLAN_AMOUNT_PERIOD_ANUAL' | translate }}
+	                    </p>
+	                    <p class="other-plans-deliverables"><span>{{premiumPlan.deliveries}} </span>{{ 'PRICING_PLAN_DETAIL_TEXT_DELIVERABLES' | translate }}</p>
+                        <p><span>USD {{premiumPlan.singlePrice}} </span>/ {{ 'PRICING_PLAN_DETAIL_TEXT_DELIVERABLES_UNIT' | translate }}</p>
+                        <a class="btn btn-primary btn-large ng-binding" href ui-sref="contact">{{ 'PRICING_PLAN_CHOOSE' | translate }}</a>
                     </div>
                 </div>
             </li>
@@ -136,7 +193,8 @@
             <div class="col-md-12">
                 <div class="other-plans align-center">
                     <div class="btn-group" role="group">
-                        <a href="#" class="btn btn-default">{{ 'OTHER_PLANS_VIEW_OTHERS' | translate }}</a>
+                        <a href ng-click="showOtherPlans=true" ng-show="!showOtherPlans" class="btn btn-default">{{ 'OTHER_PLANS_VIEW_OTHERS' | translate }}</a>
+                        <a href ng-click="showOtherPlans=false" ng-show="showOtherPlans" class="btn btn-default">{{ 'OTHER_PLANS_HIDE_OTHERS' | translate }}</a>
                         <a href ui-sref="contact" class="btn btn-default">{{ 'OTHER_PLANS_CUSTOM_PLAN' | translate }}</a>
                     </div>
                 </div>
