@@ -11,7 +11,8 @@ angular.module( 'vlasni', [
   'vlasni.about-us',
   'vlasni.faq',
   'vlasni.contact',
-  'angular-ladda'
+  'angular-ladda',
+  'navbarHide'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider, $translateProvider ) {
@@ -48,6 +49,7 @@ angular.module( 'vlasni', [
 
 .controller( 'AppCtrl', function AppCtrl ( $scope, $modal, $location, $translate ) {
   $scope.activeLang = $translate.preferredLanguage();
+  $scope.menuCollapsed = true;
 
   $scope.changeLanguage = function (langKey) {
     $translate.use(langKey);
