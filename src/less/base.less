@@ -50,6 +50,22 @@ blockquote {
     a {
         text-transform: uppercase;
     }
+    
+    a.dropdown-toggle {
+    	max-width: 88px;
+    	min-width: 88px;
+    }
+    
+    ul.dropdown-menu {
+    	max-width: 89px;
+    	min-width: 89px;
+    }
+    
+    .lang-selector a {
+    	text-transform: none;
+    	max-width: 88px;
+    	min-width: 88px;
+    }
 }
 
 .navbar-brand {
@@ -150,11 +166,14 @@ blockquote {
             }
 
             .dropdown-menu {
-                background: @bgBlue;
+            	@media (min-width: @screen-sm-min) {
+                	background: @bgBlue;
+                	
 
-                &:hover {
-                    background: @bgBlue;
-                }
+	                &:hover {
+	                    background: @bgBlue;
+	                }
+	            }
             }
         }
 
@@ -197,6 +216,10 @@ blockquote {
     }
 }
 
+.mobile-lang-selector {
+	color: @white;
+}
+
 .lang-selector {
     .caret {
         color: @blue;
@@ -206,22 +229,22 @@ blockquote {
         @media (min-width: @screen-sm-min) {
             max-width: 52px;
             min-width: 52px;
-        }
-
-        > li {
-            border-bottom: 1px solid @greySolid;
-
-            &:last-child {
-                border-bottom: 0;
-            }
-
-            @media (min-width: @screen-sm-min) {
-                border-bottom: 0;
-            }
-
-            > a {
-                padding: 3px 15px;
-            }
+        
+	        > li {
+	            border-bottom: 1px solid @greySolid;
+	
+	            &:last-child {
+	                border-bottom: 0;
+	            }
+	
+	            @media (min-width: @screen-sm-min) {
+	                border-bottom: 0;
+	            }
+	
+	            > a {
+	                padding: 3px 15px;
+	            }
+	        }
         }
     }
 }
