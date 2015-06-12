@@ -227,15 +227,20 @@
 
         > div {
             width: 100%;
-            padding-top: 75px;
+            padding-top: 80px;
 
             @media (min-width: @screen-sm-min) {
-                padding-top: 100px;
+                padding-top: 90px;
             }
 
             @media (min-width: @screen-md-min) {
                 margin-top: -25px;
                 padding-top: 50%;
+            }
+
+            @media (min-width: 1024px) {
+                margin-top: 0;
+                padding-top: 80px;
             }
         }
 
@@ -265,27 +270,46 @@
         }
 
         img {
-            padding-top: 50px;
+            padding-top: 55px;
             width: 100%;
             max-height: 160px;
+
+            @media (min-width: 360px) {
+                padding-top: 48px;
+            }
 
             @media (min-width: 480px) {
                 padding-top: 35px;
             }
 
+            @media (min-width: 600px) {
+                padding-top: 18px;
+            }
+
             @media (min-width: 640px) {
-                padding-top: 15px;
+                padding-top: 14px;
+            }
+
+            @media (width: 720px) {
+                &.develance {
+                    padding-top: 0;
+                }
             }
 
             @media (min-width: @screen-sm-min) {
                 width: auto;
                 max-height: inherit;
-                padding-top: 60px;
+                padding-top: 54px;
             }
 
             @media (min-width: @screen-md-min) {
                 margin: -105px auto;
                 padding-top: 50%;
+            }
+
+            @media (min-width: 1024px) {
+                margin: 0 auto;
+                padding-top: 53px;
             }
         }
     }
