@@ -16,8 +16,12 @@ angular.module( 'vlasni.pricing', [
   });
 })
 
-.controller( 'PricingCtrl', function PricingCtrl( $scope ) {
-
+.controller( 'PricingCtrl', function PricingCtrl( $scope, $location, $anchorScroll ) {
+	$scope.scrollTo = function(id) {
+		$scope.showOtherPlans = true;
+		$location.hash(id);
+		$anchorScroll();
+	};
 })
 
 ;
