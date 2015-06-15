@@ -38,7 +38,7 @@
 <div class="container">
     <div class="vlasni-section clear-section">
         <h2>{{ 'PRICING_CAMPAIGNS_TITLE' | translate }}</h2>
-        <p class="lead">{{ 'PRICING_CAMPAIGNS_TEXT' | translate }}</p>
+        <p class="lead"  id="other-plans">{{ 'PRICING_CAMPAIGNS_TEXT' | translate }}</p>
 
         <ul class="row plan-list">
             <li class="col-md-4">
@@ -193,7 +193,7 @@
             <div class="col-md-12">
                 <div class="other-plans align-center">
                     <div class="btn-group" role="group">
-                        <a href ng-click="showOtherPlans=true" ng-show="!showOtherPlans" class="btn btn-default">{{ 'OTHER_PLANS_VIEW_OTHERS' | translate }}</a>
+                        <a href ng-click="scrollTo('other-plans')" ng-show="!showOtherPlans" class="btn btn-default">{{ 'OTHER_PLANS_VIEW_OTHERS' | translate }}</a>
                         <a href ng-click="showOtherPlans=false" ng-show="showOtherPlans" class="btn btn-default">{{ 'OTHER_PLANS_HIDE_OTHERS' | translate }}</a>
                         <a href ui-sref="contact" class="btn btn-default">{{ 'OTHER_PLANS_CUSTOM_PLAN' | translate }}</a>
                     </div>
