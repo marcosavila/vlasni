@@ -197,6 +197,7 @@
         font-size: 9px;
         color: @boldBlue;
         text-transform: uppercase;
+        margin-bottom: 0;
 
         @media (min-width: @screen-sm-min) {
             font-size: @fontSM;
@@ -213,6 +214,10 @@
     }
 
     .external-block {
+        @media (max-width: @screen-xs-max) {
+            display: table;
+        }
+
         height: 165px;
         border: 1px solid @lightGrey;
         border-radius: @baseRadius;
@@ -242,6 +247,12 @@
                 margin-top: 0;
                 padding-top: 80px;
             }
+
+            @media (max-width: @screen-xs-max) {
+                display: table-cell;
+                vertical-align: middle;
+                padding-top: 0;
+            }
         }
 
         &.external-left {
@@ -254,6 +265,14 @@
     }
 
     .internal-block {
+        @media (max-width: @screen-xs-max) {
+            a {
+                display: block;
+                height: 100%;
+                position: relative;
+            }
+        }
+
         background: @lightestGrey;
         height: 165px;
         border: 1px solid @lightGrey;
@@ -310,6 +329,20 @@
             @media (min-width: 1024px) {
                 margin: 0 auto;
                 padding-top: 53px;
+            }
+
+            @media (max-width: @screen-xs-max) {
+                bottom: 0;
+                display: block;
+                // height: 30%;
+                left: 0;
+                margin: auto;
+                padding-top: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                vertical-align: middle;
+                width: 50%;
             }
         }
     }
